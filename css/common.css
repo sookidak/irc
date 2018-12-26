@@ -602,30 +602,19 @@ ul.bxslider {  list-style: none;}
 
 
 
+/* 표 스크롤 */
+.table-scroll thead.ir{width: 1px;height: 1px; position: absolute;top: -99999px;}
+.table-scroll{border:1px solid #ddd; border-top:2px solid #bbb }
+.table-scroll thead th{border-top:0}
+.table-scroll .last{padding-right: 37px;}
+.table-scroll .scroll{height: 500px; overflow-y:scroll; }
 
-/* 진료시간표
-.res-time td, .res-time th{text-align: center; padding:10px 5px ; line-height: 24px;}
 
-
-.res-time { display: block; width: 1180px; border-collapse: collapse;}
-.res-time tbody { display: block; height: 200px; overflow-y:scroll;}
-.res-time tr:nth-of-type(1) th:nth-of-type(1), .res-time tr:nth-of-type(1) td:nth-of-type(1){ width: 160px; }
-.res-time tr:nth-of-type(1) th:nth-of-type(2), .res-time tr:nth-of-type(1) td:nth-of-type(2) { width: 80px; }
-.res-time tr:nth-of-type(1) th:nth-of-type(3), .res-time tr:nth-of-type(1) td:nth-of-type(3) { width: 199px; }
-.res-time tr:nth-of-type(1) th:nth-of-type(4), .res-time tr:nth-of-type(1) td:nth-of-type(4) { width: 74px; }
-.res-time tr:nth-of-type(2) th, .res-time tr:nth-of-type(1) td:nth-of-type(5), .res-time tr:nth-of-type(1) td:nth-of-type(6), .res-time tr:nth-of-type(1) td:nth-of-type(7), .res-time tr:nth-of-type(1) td:nth-of-type(8), .res-time tr:nth-of-type(1) td:nth-of-type(9), .res-time tr:nth-of-type(1) td:nth-of-type(10), .res-time tr:nth-of-type(1) td:nth-of-type(11), .res-time tr:nth-of-type(1) td:nth-of-type(12), .res-time tr:nth-of-type(1) td:nth-of-type(13){ width: 65px; }
-.res-time tr:nth-of-type(2) th:last-child { width: 82px; }
-.res-time td:last-child { width: 65px }*/
-
-.res-time {position: relative;border: 1px solid #000;padding-top: 37px;background: #500;}
-.container {overflow-y: auto;height: 500px;}
-.res-time table {border-spacing: 0;width:100%;}
-.res-time td + td {border-left:1px solid #eee;}
-.res-time td, th {border-bottom:1px solid #eee;background: #ddd;color: #000;padding: 10px 25px;}
-.res-time th {height: 0;line-height: 0;padding-top: 0;padding-bottom: 0;color: transparent;border: none;white-space: nowrap;}
-.res-time th div{position: absolute;background: transparent;color: #fff;padding: 9px 25px;top: 0;margin-left: -25px;line-height: normal;border-left: 1px solid #800;}
-.res-time th:first-child div{border: none;}
-
+/* 진료예약 */
+.res-time {margin-top: 25px;}
+.res-time td, .res-time th{text-align: center; padding:10px 5px ; line-height: 24px;word-break: keep-all;}
+.res-time .last{padding-right: 22px;}
+.res-time .textL{padding-left: 15px}
 
 
 /* 특수수탁검사 파일 다운로드 */

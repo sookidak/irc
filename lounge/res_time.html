@@ -13,54 +13,10 @@
 			<li class="color-style1 marT15">토요일에는 알레르기내과, 가정의학과, 여성암센터, 폐암센터, 비만센터, 사이버나이프센터, 직업환경의학과의 진료가 없사오니 진료 시 참고하시기 바랍니다.  </li>
 			<li class="color-style1 marT15">♥표는 선택진료의사 입니다.</li>
 		</ul>
-		<!-- 진료시간표 --
-		<table class="table">	  
-			<caption><span class="offscreen">진료시간표 제목을 안내하는 표입니다.</span></caption>	  
-			<colgroup>	    
-				<col style="width:160px"/>							
-				<col style="width:80px"/>	    
-				<col style=""/> 							
-				<col style="width:74px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:65px"/> 					
-				<col style="width:82px"/> 
-			</colgroup>	  
-			<thead>	
-				<tr>
-					<th rowspan="2">진료과</th>
-					<th rowspan="2">교수</th>
-					<th rowspan="2">세부전공</th>
-					<th rowspan="2">선택</th>
-					<th colspan="2">월</th>
-					<th colspan="2">화</th>
-					<th colspan="2">수</th>
-					<th colspan="2">목</th>
-					<th colspan="2">금</th>
-				</tr>
-				<tr>
-					<th>오전</th>
-					<th>오후</th>
-					<th>오전</th>
-					<th>오후</th>
-					<th>오전</th>
-					<th>오후</th>
-					<th>오전</th>
-					<th>오후</th>
-					<th>오전</th>
-					<th>오후</th>
-				</tr>
-			</thead>
-		</table>
-		<div class="res-time">
-			<table class="table">	  
-				<caption><span class="offscreen">진료시간표 내용을 안내하는 표입니다.</span></caption>	  
+		<!-- 진료시간표 -->
+		<div class="table-scroll res-time">			
+			<!-- 보여지는 표 상단 -->
+			<table class="table thead">	  
 				<colgroup>	    
 					<col style="width:160px"/>							
 					<col style="width:80px"/>	    
@@ -75,144 +31,58 @@
 					<col style="width:65px"/> 					
 					<col style="width:65px"/> 					
 					<col style="width:65px"/> 					
-					<col style="width:65px"/> 
-				</colgroup>	  	  
-				<tbody>
+					<col style="width:82px"/> 
+				</colgroup>	  
+				<thead>	
 					<tr>
-						<td rowspan="4">가정의학과</td>
-						<td>최지호</td>
-						<td class="textL">평생 건강관리, 금연 <br/>♣ 다양한 증상, 불분명한 증상 ♣ <p>▣ 3층 건강증진센터</p></td>
-						<td>　</td>
-						<td>진료</td>
-						<td>▣</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>▣</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
+						<th rowspan="2">진료과</th>
+						<th rowspan="2">교수</th>
+						<th rowspan="2">세부전공</th>
+						<th rowspan="2">선택</th>
+						<th colspan="2">월</th>
+						<th colspan="2">화</th>
+						<th colspan="2">수</th>
+						<th colspan="2">목</th>
+						<th colspan="2"  class="last">금</th>
 					</tr>
 					<tr>
-						<td>일반의</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
-						<td>진료</td>
+						<th>오전</th>
+						<th>오후</th>
+						<th>오전</th>
+						<th>오후</th>
+						<th>오전</th>
+						<th>오후</th>
+						<th>오전</th>
+						<th>오후</th>
+						<th>오전</th>
+						<th class="last">오후</th>
 					</tr>
-					<tr>
-						<td>이연지</td>
-						<td class="textL">비만, 평생건강관리<br/>♣ 피로, 영양불균형, 갱년기 증후군, 노화, 스트레스 ♣<p>△ 비만센터(목요일 10시부터) </p></td>
-						<td>　</td>
-						<td>△</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>△</td>
-						<td>△</td>
-						<td>진료</td>
-						<td>　</td>
-					</tr>
-					<tr>
-						<td>조세욱</td>
-						<td class="textL">건강증진,    노인의학 <br/>♣ 건강검진, 평생건강관리, 여행자 건강관리 ♣ <p>▣ 3층 건강증진센터</p></td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>▣</td>
-						<td>▣</td>
-						<td>　</td>
-						<td>　</td>
-						<td>▣</td>
-						<td>▣</td>
-						<td>　</td>
-						<td>　</td>
-					</tr>
-					<tr>
-						<td rowspan="4">감염내과</td>
-						<td>백지현</td>
-						<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 원인 모를 열, HIV 감염, 에이즈, 결핵, 매독, 항생제 치료, 요로 감염, 폐렴, 피부와 피부 아래 조직의 감염, 관절과 뼈의    감염, 임파선염, 성인예방접종,해외여행 전 상담, 해외 여행 후의 감염질환 ♣ </td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-					</tr>
-					<tr>
-						<td>임재형</td>
-						<td class="textL">[감염내과]</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>진료<br/>
-						(1,3,5주)</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-					</tr>
-					<tr>
-						<td>이진수</td>
-						<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 발열, 열병, 불명열, 패혈증, 면역저하, HIV, AIDS(에이즈), 인플루엔자, 인수공통 전염병, 쯔쯔가무시병, 바르토넬라병 ♣</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-					</tr>
-					<tr>
-						<td>이진수</td>
-						<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 발열, 열병, 불명열, 패혈증, 면역저하, HIV, AIDS(에이즈), 인플루엔자, 인수공통 전염병, 쯔쯔가무시병, 바르토넬라병 ♣</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-						<td>진료</td>
-						<td>　</td>
-						<td>　</td>
-						<td>　</td>
-					</tr>    
-
-				</tbody>	
-			</table>
-		</div>
-		<!-- //진료시간표 -->
-		<!-- 진료시간표 -->
-		<section class="res-time">
-			<div class="container">
-				<table class="table ">	  
-					<caption><span class="offscreen">진료시간표 제목을 안내하는 표입니다.</span></caption>	   
-					<thead>	
-						<tr  class="header">
+				</thead>
+			</table>			
+			<!-- //보여지는 표 상단 -->
+			<!-- 스크롤 되는 표  -->
+			<div class="scroll">
+				<table class="table tbody" summary="스크롤이 적용되는 테이블">	  
+					<caption><span class="offscreen">진료시간표 내용을 안내하는 표입니다.</span></caption>	  
+					<colgroup>	    
+						<col style="width:160px"/>							
+						<col style="width:80px"/>	    
+						<col style=""/> 							
+						<col style="width:74px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 					
+						<col style="width:65px"/> 
+					</colgroup>	  	  
+					<!-- 숨겨지는 표 상단 -->
+					<thead class="ir">	
+						<tr>
 							<th rowspan="2">진료과</th>
 							<th rowspan="2">교수</th>
 							<th rowspan="2">세부전공</th>
@@ -236,136 +106,137 @@
 							<th>오후</th>
 						</tr>
 					</thead>
+					<!-- //숨겨지는 표 상단 -->
 					<tbody>
-						<div class="scroll">
-							<tr>
-								<td rowspan="4">가정의학과</td>
-								<td>최지호</td>
-								<td class="textL">평생 건강관리, 금연 <br/>♣ 다양한 증상, 불분명한 증상 ♣ <p>▣ 3층 건강증진센터</p></td>
-								<td>　</td>
-								<td>진료</td>
-								<td>▣</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>▣</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-							</tr>
-							<tr>
-								<td>일반의</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-							</tr>
-							<tr>
-								<td>이연지</td>
-								<td class="textL">비만, 평생건강관리<br/>♣ 피로, 영양불균형, 갱년기 증후군, 노화, 스트레스 ♣<p>△ 비만센터(목요일 10시부터) </p></td>
-								<td>　</td>
-								<td>△</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>△</td>
-								<td>△</td>
-								<td>진료</td>
-								<td>　</td>
-							</tr>
-							<tr>
-								<td>조세욱</td>
-								<td class="textL">건강증진,    노인의학 <br/>♣ 건강검진, 평생건강관리, 여행자 건강관리 ♣ <p>▣ 3층 건강증진센터</p></td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>▣</td>
-								<td>▣</td>
-								<td>　</td>
-								<td>　</td>
-								<td>▣</td>
-								<td>▣</td>
-								<td>　</td>
-								<td>　</td>
-							</tr>
-							<tr>
-								<td rowspan="4">감염내과</td>
-								<td>백지현</td>
-								<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 원인 모를 열, HIV 감염, 에이즈, 결핵, 매독, 항생제 치료, 요로 감염, 폐렴, 피부와 피부 아래 조직의 감염, 관절과 뼈의    감염, 임파선염, 성인예방접종,해외여행 전 상담, 해외 여행 후의 감염질환 ♣ </td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-							</tr>
-							<tr>
-								<td>임재형</td>
-								<td class="textL">[감염내과]</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>진료<br/>
-								(1,3,5주)</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-							</tr>
-							<tr>
-								<td>이진수</td>
-								<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 발열, 열병, 불명열, 패혈증, 면역저하, HIV, AIDS(에이즈), 인플루엔자, 인수공통 전염병, 쯔쯔가무시병, 바르토넬라병 ♣</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-							</tr>
-							<tr>
-								<td>이진수</td>
-								<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 발열, 열병, 불명열, 패혈증, 면역저하, HIV, AIDS(에이즈), 인플루엔자, 인수공통 전염병, 쯔쯔가무시병, 바르토넬라병 ♣</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-								<td>진료</td>
-								<td>　</td>
-								<td>　</td>
-								<td>　</td>
-							</tr> 
-						</div>	
-					</tbody>
+						<tr>
+							<td rowspan="4">가정의학과</td>
+							<td>최지호</td>
+							<td class="textL">평생 건강관리, 금연 <br/>♣ 다양한 증상, 불분명한 증상 ♣ <p>▣ 3층 건강증진센터</p></td>
+							<td>　</td>
+							<td>진료</td>
+							<td>▣</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>▣</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+						</tr>
+						<tr>
+							<td>일반의</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+							<td>진료</td>
+						</tr>
+						<tr>
+							<td>이연지</td>
+							<td class="textL">비만, 평생건강관리<br/>♣ 피로, 영양불균형, 갱년기 증후군, 노화, 스트레스 ♣<p>△ 비만센터(목요일 10시부터) </p></td>
+							<td>　</td>
+							<td>△</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>△</td>
+							<td>△</td>
+							<td>진료</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td>조세욱</td>
+							<td class="textL">건강증진,    노인의학 <br/>♣ 건강검진, 평생건강관리, 여행자 건강관리 ♣ <p>▣ 3층 건강증진센터</p></td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>▣</td>
+							<td>▣</td>
+							<td>　</td>
+							<td>　</td>
+							<td>▣</td>
+							<td>▣</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td rowspan="4">감염내과</td>
+							<td>백지현</td>
+							<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 원인 모를 열, HIV 감염, 에이즈, 결핵, 매독, 항생제 치료, 요로 감염, 폐렴, 피부와 피부 아래 조직의 감염, 관절과 뼈의    감염, 임파선염, 성인예방접종,해외여행 전 상담, 해외 여행 후의 감염질환 ♣ </td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td>임재형</td>
+							<td class="textL">[감염내과]</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>진료<br/>
+							(1,3,5주)</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+						</tr>
+						<tr>
+							<td>이진수</td>
+							<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 발열, 열병, 불명열, 패혈증, 면역저하, HIV, AIDS(에이즈), 인플루엔자, 인수공통 전염병, 쯔쯔가무시병, 바르토넬라병 ♣</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td>이진수</td>
+							<td class="textL">[감염내과]    감염성질환, 병원감염, 발열질환 <br/>♣ 발열, 열병, 불명열, 패혈증, 면역저하, HIV, AIDS(에이즈), 인플루엔자, 인수공통 전염병, 쯔쯔가무시병, 바르토넬라병 ♣</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>진료</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>    
+
+					</tbody>	
 				</table>
-			</div>
-		</section>
+			</div>			
+			<!-- //스크롤 되는 표  -->
+		</div>
 		<!-- //진료시간표 -->
 	</div>
 </section>
