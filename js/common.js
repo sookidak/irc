@@ -115,7 +115,7 @@ $(document).ready(function() {
 		var tapW = 1180/tapN;
 		$tablist1.find('a').css( 'width', tapW+'px' );
 	}else if(tapN > 7){
-		var tapW = 1180/8;
+		var tapW = 1180/6;
 		$tablist1.find('a').css( 'width', tapW+'px' );
 	}
 
@@ -128,6 +128,16 @@ $(document).ready(function() {
 		$(".tabpanel").removeClass('active');
 		var panel = $(this).attr('href');
 		//alert(panel);
+		$(panel).addClass('active');
+	});
+
+	//탭2 클릭 이벤트 
+	$tablist2.find('a').on('click',function(e) {
+		e.preventDefault();		
+		$tablist2.find('a').removeClass('active');
+		$(this).addClass('active');
+		$(".tabpanel-sub").removeClass('active');
+		var panel = $(this).attr('href');
 		$(panel).addClass('active');
 	});
 
