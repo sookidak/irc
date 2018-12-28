@@ -1,0 +1,25 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap along">
+		<h1 class="title-style1 along">비밀번호 재설정</h1>
+	</div>
+	<div class="contents">
+		<div class="member-wrap">
+			<p class="text-style1 line">새로 변경하실 비밀번호를 입력해주세요.</p>
+			<label><input type="password" id="password" placeholder="새 비밀번호" title="새 비밀번호 입력창" class="pw-find-input" /></label>
+			<p class="text-style4 pw-reset"><span class="acc">*</span>비밀번호는 10~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 2종류 이상 또는 8~20자리 이내 영문, 숫자, <br/> 특수문자(!,@,*)중 3종류 이상을 조합하여 입력해주세요</p>
+			<label><input type="password" id="password2" placeholder="새 비밀번호 확인" title="새 비밀번호 입력창" class="pw-find-input" /></label>
+			<p class="text-style4 pw-reset"><span class="acc">*</span>위에서 설정한 비밀번호와 동일하게 입력해주세요</p>			
+			<div class="btn-wrap">
+				<button type="button" class="btn btn-l color02">설정완료</button>
+				<button type="button" class="btn btn-l color03 ">메인으로</button>	
+			</div>	
+
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

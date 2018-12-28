@@ -1,0 +1,41 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">회원가입</h1>
+	</div>
+	<div class="contents">
+		<div class="member-wrap">
+			<ul class="step-wrap">
+				<li class="stepOn"><span class="StepNum">1</span> <span class="txt">약관동의</span></li>
+				<li class="stepOn"><span class="StepNum">2</span> <span class="txt">본인인증<span class="offscreen">(현재단계)</span></span></li>
+				<li class="stepOff"><span class="StepNum">3</span> <span class="txt">정보입력</span></li>
+				<li class="stepOff"><span class="StepNum">4</span> <span class="txt">가입완료</span></li>
+			</ul>
+			<p class="text-style1">본인 인증을 위한 인증방법을 선택해주세요.</p>
+			<div class="btn-wrap">
+				<button type="button" class="btn phone btn-big line1">			
+					<div class="check-icon"></div>
+					<div class="btn-icon"></div>	
+					<p >휴대폰인증</p>			
+				</button>	
+				<button type="button" class="btn ipin btn-big line1">			
+					<div class="check-icon"></div>
+					<div class="btn-icon"></div>	
+					<p>아이핀 인증</p>
+				</button>
+			</div>
+			<div class="etcbox etcbox-type2">
+				<div class="etcbox-title1">유의사항</div>
+				<ul class="list-type2">
+					<li>아이핀은 웹사이트에 주민등록번호 대신 이용할 수 있는 사이버 신원확인번호로서 인터넷 상에서 주민등록번호가 무단으로 유출되어 도용되는 부작용을 막기 위해 만들어진 서비스입니다.</li>
+					<li>아이핀 인증 또는 휴대폰 인증 시 장애가 있으신 경우는 SCI 서울신용평가정보(주) 1577-1006에 문의하시기 바랍니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
