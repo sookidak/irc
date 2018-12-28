@@ -1,0 +1,397 @@
+@@include('../inc/head.html')
+<!-- popup -->
+<section class="popup" id="popup">
+	<h1 class="title-style1">1차 협진의원</h1>
+	<h2 class="title-style2 marT30">인하대병원 협력 체결 신청서</h2>
+	<p class="text-style2 marT15 lineH">저희 인하대병원과 귀 병원간의 협력 체결을 통하여 양 기관의 다양한 의료자원을 보다 효율적으로 활용하는 동시에 의료의 질을 향상시켜<br/> 의료기관 상호간 공동 발전을 목적으로 합니다.</p>
+
+	<h3 class="title-style4 marT30">병원정보</h3>
+	<!-- 병원정보 -->
+	<table class="table table-type4 marT15">	  
+		<caption><span class="offscreen">이력서출력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:160px"/>	    
+			<col style="width:310px"/>	
+			<col style="width:160px"/>	    
+			<col style="width:310px"/>  
+		</colgroup>	  
+		<tbody>	    
+			<tr>	         
+				<th>
+					<label for="hos">병원명<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+				</th>	      
+				<td colspan="3">
+					<input type="text" id="hos" maxlength="" title="병원명 입력" value="최태열내과의원" class="wide" disabled/>
+				</td>
+			</tr>  
+			<tr>	         
+				<th>
+					<label for="add">주소<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+				</th>	      
+				<td colspan="3">
+					<input type="text" id="add" maxlength="" title="주소 입력" value="인천 부평구 원적로 434(산곡동) 혜성프라자" class="wide" disabled/>
+				</td>
+			</tr> 
+			<tr>	         
+				<th>
+					<label for="ph01">전화번호<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+				</th>						      
+				<td>
+					<div class="input-num">
+						<input type="text" id="ph01" maxlength="3" title="전화번호 앞번호 입력" class="phoneNum"/><span class="input-text">-</span>	
+						<label><input type="text" id="ph02" maxlength="4" title="전화번호 중간번호 입력" class="phoneNum" /></label><span class="input-text">-</span>
+						<label><input type="text" id="ph03" maxlength="4" title="전화번호 뒷번호 입력" class="phoneNum"/></label>
+					</div>	
+				</td>	        
+				<th>
+					<label for="fax01">FAX</label>
+				</th>						      
+				<td>
+					<div class="input-num">
+						<input type="text" id="fax01" maxlength="3" title="FAX 앞번호 입력" class="phoneNum"/><span class="input-text">-</span>	
+						<label><input type="text" id="fax02" maxlength="4" title="FAX 중간번호 입력" class="phoneNum" /></label><span class="input-text">-</span>
+						<label><input type="text" id="fax03" maxlength="4" title="FAX 뒷번호 입력" class="phoneNum"/></label>
+					</div>	
+				</td>	            
+			</tr>  
+			<tr>	         
+				<th>
+					<label for="room-a2">입원실</label>
+				</th>	      
+				<td>
+					<div class="radio">
+						<input type="radio" id="room-a2" name="room"  value="2" aria-checked=”false”>
+						<label for="room-a2" >유[병상]</label>
+					</div>
+					<label><input type="text" id="beds" maxlength="" class="wid70" title="입원실 있을경우 병상 수 입력"/></label>
+					<div class="radio marL30">
+						<input type="radio" id="room-b2" name="room"  value="2" aria-checked=”false”>
+						<label for="room-b2" >무</label>
+					</div>
+					
+				</td>	        
+				<th>
+					<label for="home">홈페이지</label>					
+				</th>	      
+				<td>
+					<input type="text" id="home" maxlength="" title="홈페이지 입력" value="" />
+				</td>	 	    
+			</tr> 			
+			<tr>	         
+				<th>
+					<label for="chara">병원특성</label>
+				</th>	      
+				<td colspan="3">
+					<textarea class="wide" id="chara"></textarea>
+				</td>		 	    
+			</tr> 
+			
+		</tbody>	
+	</table>
+	<!-- //병원정보 -->
+	<h3 class="title-style4 marT50">의사정보</h3>
+	<!-- 의사정보 -->
+	<table class="table table-type4 marT15">	  
+		<caption><span class="offscreen">의사정보 입력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:160px"/>	    
+			<col style="width:"/>	
+			<col style="width:160px"/>	 
+			<col style="width:"/>	 
+		</colgroup>	 
+		<tbody>	
+			<tr>	         
+				<th>
+					<label for="name">이름</label>
+				</th>	      
+				<td>
+					<input type="text" id="name" maxlength="20" title="이름 입력" value="최태열" disabled/>
+				</td>	        
+				<th>
+					<label for="license">면허번호</label>
+				</th>	      
+				<td>
+					<input type="text" id="license" maxlength="10" title="면허번호 입력" value="29960" disabled/>
+				</td>	 	    
+			</tr> 
+			<tr>	         
+				<th>
+					<label for="school">출신학교</label>
+				</th>	      
+				<td>
+					<input type="text" id="school" maxlength="20" title="출신학교 입력" value="경희대" disabled/>
+				</td>	        
+				<th>
+					<label for="year">졸업년도</label>
+				</th>	      
+				<td>
+					<input type="text" id="year" maxlength="4" title="졸업년도 입력" value="1986" disabled/>
+				</td>	 	    
+			</tr>   
+			<tr>	         
+				<th>
+					<label for="work-hos">수련병원</label>
+				</th>	      
+				<td>
+					<input type="text" id="work-hos" maxlength="10" title="최종학력 입력"/>
+				</td>	        
+				<th>
+					<label for="dept">전공과목</label>
+				</th>	      
+				<td>
+					<input type="text" id="dept" maxlength="10" title="최종학위 입력" value="M" disabled/>
+				</td>	 	    
+			</tr> 		
+			<tr>	         
+				<th>
+					<label for="email01">E-mail</label>
+				</th>	      
+				<td colspan="3">
+					<div class="input-email">
+						<input type="text" id="email01" maxlength="20" title="이메일 앞 주소 입력" value="aaaaa" class="emil2" disabled/>
+						<span>@</span>
+						<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소 입력" value="hanmail.net" class="emil" disabled/></label>
+						<div class="select emil">
+							<label for="email-sel">직접 입력</label>
+							<select id="email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택" disabled>   
+								<option value="" role="menuitem">직접 입력</option>
+								<option value="chol.com" role="menuitem">chol.com</option>
+								<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+								<option value="empal.com" role="menuitem">empal.com</option>
+								<option value="freechal.com" role="menuitem">freechal.com</option>
+								<option value="hanmail.net" role="menuitem">hanmail.net</option>
+								<option value="hanmir.com" role="menuitem">hanmir.com</option>
+								<option value="hitel.net" role="menuitem">hitel.net</option>
+								<option value="hotmail.com" role="menuitem">hotmail.com</option>
+								<option value="inha.com" role="menuitem">inha.com</option>
+								<option value="intizen.com" role="menuitem">intizen.com</option>
+								<option value="kebi.com" role="menuitem">kebi.com</option>
+								<option value="korea.com" role="menuitem">korea.com</option>
+								<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+								<option value="nate.com" role="menuitem">nate.com</option>
+								<option value="naver.com" role="menuitem">naver.com</option>
+								<option value="netian.com" role="menuitem">netian.com</option>
+								<option value="orgio.net" role="menuitem">orgio.net</option>
+								<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+							</select>
+						</div>
+					</div>
+				</td> 
+			</tr> 			
+			<tr>  
+				<th>
+					<label for="hp01">휴대폰</label>
+				</th>	      
+				<td colspan="3">
+					<div class="input-num">
+						<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010"  class="phoneNum" disabled/><span class="input-text">-</span>	
+						<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력"  value="1234" class="phoneNum" disabled/></label><span class="input-text">-</span>
+						<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+					</div>	
+				</td>	 	    
+			</tr> 
+		</tbody>	
+	</table>
+	<!-- //의사정보 -->
+	<h3 class="title-style4 marT50">실무자 정보</h3>
+	<!-- 실무자 정보 -->
+	<!-- 행정 실무자 정보 입력 -->
+	<table class="table table-type4 marT15">	  
+		<caption><span class="offscreen">행정 실무자 정보입력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:160px"/>	    
+			<col style="width:"/>	
+			<col style="width:160px"/>	 
+			<col style="width:"/>	 
+		</colgroup>	  
+		<thead>
+			<tr>
+				<th colspan="4">행정 실무자</th>
+			</tr>
+		</thead>
+		<tbody>	
+			<tr>	         
+				<th>
+					<label for="man-name">이름</label>
+				</th>	      
+				<td>
+					<input type="text" id="man-name" maxlength="" title="이름 입력" value=""  />
+				</td>	        
+				<th>
+					<label for="man-spot">직급</label>
+				</th>	      
+				<td>
+					<input type="text" id="man-spot" maxlength="" title="직급 입력"  value="" />
+				</td>	 	    
+			</tr> 
+			<tr>
+				<th>
+					<label for="man-ph01">전화번호</label>
+				</th>						      
+				<td>
+					<div class="input-num">
+						<input type="text" id="man-ph01" maxlength="3" title="전화번호 앞번호 입력" value="" class="phoneNum" /><span class="input-text">-</span>	
+						<label><input type="text" id="man-ph02" maxlength="4" title="전화번호 중간번호 입력" value=""  class="phoneNum" /></label><span class="input-text">-</span>
+						<label><input type="text" id="man-ph03" maxlength="4" title="전화번호 뒷번호 입력" value="" class="phoneNum" /></label>
+					</div>	
+				</td>   	 	        
+				<th>
+					<label for="man-hp01">휴대폰</label>
+				</th>	      
+				<td>
+					<div class="input-num">
+						<input type="text" id="man-hp01" maxlength="3" title="핸드폰 앞번호 입력" value="" class="phoneNum" /><span class="input-text">-</span>	
+						<label><input type="text" id="man-hp02" maxlength="4" title="핸드폰 중간번호 입력" value="" class="phoneNum" /></label><span class="input-text">-</span>
+						<label><input type="text" id="man-hp03" maxlength="4" title="핸드폰 뒷번호 입력"  value="" class="phoneNum" /></label>
+					</div>	
+				</td>	 	    
+			</tr> 
+			<tr>	         
+				<th>
+					<label for="man-email01">E-mail</label>
+				</th>	      
+				<td colspan="3">
+					<div class="input-email">
+						<input type="text" id="man-email01" maxlength="20" title="이메일 앞 주소 입력" class="emil2" value="" />
+						<span>@</span>
+						<label><input type="text" id="man-email02" maxlength="20" title="이메일 뒷 주소 입력" class="emil" value=""  /></label>
+						<div class="select emil">
+							<label for="man-email-sel">직접 입력</label>
+							<select id="man-email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택" >    
+								<option value="" role="menuitem">직접 입력</option>
+								<option value="chol.com" role="menuitem">chol.com</option>
+								<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+								<option value="empal.com" role="menuitem">empal.com</option>
+								<option value="freechal.com" role="menuitem">freechal.com</option>
+								<option value="hanmail.net" role="menuitem">hanmail.net</option>
+								<option value="hanmir.com" role="menuitem">hanmir.com</option>
+								<option value="hitel.net" role="menuitem">hitel.net</option>
+								<option value="hotmail.com" role="menuitem">hotmail.com</option>
+								<option value="inha.com" role="menuitem">inha.com</option>
+								<option value="intizen.com" role="menuitem">intizen.com</option>
+								<option value="kebi.com" role="menuitem">kebi.com</option>
+								<option value="korea.com" role="menuitem">korea.com</option>
+								<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+								<option value="nate.com" role="menuitem">nate.com</option>
+								<option value="naver.com" role="menuitem">naver.com</option>
+								<option value="netian.com" role="menuitem">netian.com</option>
+								<option value="orgio.net" role="menuitem">orgio.net</option>
+								<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+							</select>
+						</div>
+					</div>
+				</td>			
+			</tr> 			
+		</tbody>	
+	</table>
+	<!-- //행정 실무자 정보 입력 -->
+	<!-- 간호 실무자 정보 입력 -->
+	<table class="table table-type4 marT15">	  
+		<caption><span class="offscreen">간호 실무자 정보입력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:160px"/>	    
+			<col style="width:"/>	
+			<col style="width:160px"/>	 
+			<col style="width:"/>	 
+		</colgroup>	  
+		<thead>
+			<tr>
+				<th colspan="4">간호 실무자</th>
+			</tr>
+		</thead>
+		<tbody>	
+			<tr>	         
+				<th>
+					<label for="nur-name">이름</label>
+				</th>	      
+				<td>
+					<input type="text" id="nur-name" maxlength="" title="이름 입력"  />
+				</td>	        
+				<th>
+					<label for="nur-spot">직급</label>
+				</th>	      
+				<td>
+					<input type="text" id="nur-spot" maxlength="" title="직급 입력" />
+				</td>	 	    
+			</tr> 
+			<tr>
+				<th>
+					<label for="nur-ph01">전화번호</label>
+				</th>						      
+				<td>
+					<div class="input-num">
+						<input type="text" id="nur-ph01" maxlength="3" title="전화번호 앞번호 입력" value="" class="phoneNum" /><span class="input-text">-</span>	
+						<label><input type="text" id="nur-ph02" maxlength="4" title="전화번호 중간번호 입력" value=""  class="phoneNum" /></label><span class="input-text">-</span>
+						<label><input type="text" id="nur-ph03" maxlength="4" title="전화번호 뒷번호 입력" value="" class="phoneNum" /></label>
+					</div>	
+				</td>   	 	        
+				<th>
+					<label for="nur-hp01">휴대폰</label>
+				</th>	      
+				<td>
+					<div class="input-num">
+						<input type="text" id="nur-hp01" maxlength="3" title="핸드폰 앞번호 입력" value="" class="phoneNum" /><span class="input-text">-</span>	
+						<label><input type="text" id="nur-hp02" maxlength="4" title="핸드폰 중간번호 입력" value="" class="phoneNum" /></label><span class="input-text">-</span>
+						<label><input type="text" id="nur-hp03" maxlength="4" title="핸드폰 뒷번호 입력"  value="" class="phoneNum" /></label>
+					</div>	
+				</td>	 	    
+			</tr> 
+			<tr>	         
+				<th>
+					<label for="nur-email01">E-mail</label>
+				</th>	      
+				<td colspan="3">
+					<div class="input-email">
+						<input type="text" id="nur-email01" maxlength="20" title="이메일 앞 주소 입력" class="emil2" value="" />
+						<span>@</span>
+						<label><input type="text" id="nur-email02" maxlength="20" title="이메일 뒷 주소 입력" class="emil" value=""  /></label>
+						<div class="select emil">
+							<label for="nur-email-sel">직접 입력</label>
+							<select id="nur-email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택" >    
+								<option value="" role="menuitem">직접 입력</option>
+								<option value="chol.com" role="menuitem">chol.com</option>
+								<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+								<option value="empal.com" role="menuitem">empal.com</option>
+								<option value="freechal.com" role="menuitem">freechal.com</option>
+								<option value="hanmail.net" role="menuitem">hanmail.net</option>
+								<option value="hanmir.com" role="menuitem">hanmir.com</option>
+								<option value="hitel.net" role="menuitem">hitel.net</option>
+								<option value="hotmail.com" role="menuitem">hotmail.com</option>
+								<option value="inha.com" role="menuitem">inha.com</option>
+								<option value="intizen.com" role="menuitem">intizen.com</option>
+								<option value="kebi.com" role="menuitem">kebi.com</option>
+								<option value="korea.com" role="menuitem">korea.com</option>
+								<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+								<option value="nate.com" role="menuitem">nate.com</option>
+								<option value="naver.com" role="menuitem">naver.com</option>
+								<option value="netian.com" role="menuitem">netian.com</option>
+								<option value="orgio.net" role="menuitem">orgio.net</option>
+								<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+							</select>
+						</div>
+					</div>
+				</td>			
+			</tr> 			
+		</tbody>	
+	</table>
+	<!-- //간호 실무자 정보 입력 -->
+	<!-- //실무자 정보 -->
+	<div class="textR marT30">
+		<p class="text-style2">인하대병원 협력 병·의원 체결 내규에 의거하여 협력 병·의원 협력체결을 요청합니다.</p>
+		<p class="text-style6 marT20"> 
+			<input type="text" maxlength="4" title="년 입력" value="2019" class="wid80 today" disabled/> 년  
+			<input type="text" maxlength="2" title="월 입력" value="02" class="wid64 today" disabled/> 월 
+			<input type="text" maxlength="2" title="일 입력" value="14" class="wid64 today" disabled/> 일
+		</p>
+		<p class="color-style5 marT10">
+			<input type="text" maxlength="10" title="신청인 입력" class="wid112" /> (신청인)
+		</p>
+		<p class="text-style2 NotoKrM marT30">인하대학교 병원장 귀하</p>
+	</div>	
+	<div class="btn-wrap marT50">
+		<button type="button" class="btn btn-l color01">등록</button>
+	</div>
+</section>
+<!-- //popup -->
+</body>
+</html>

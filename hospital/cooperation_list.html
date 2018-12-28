@@ -1,0 +1,237 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">협력체결신청</h1>
+	</div>
+	<div class="contents">
+		<!-- 검색박스 -->
+		<div class="search-box2">
+			<label>병원명<input type="text" id="" class="wid395" title="병원명을 입력하세요" /></label>
+			<button type="" class="btn-sheah">검색</button>
+			<label>병원유형
+				<div class="select wid470"> 
+					<label for="selector1">전체</label> 
+					<select id="selector1" class="" aria-haspopup="true" aria-controls="select-menu" title="병원유형을 선택하세요" >    
+						<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+						<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+					</select>	
+				</div>
+			</label>
+		</div>
+		<!-- //검색박스 -->
+		<!-- 버튼박스 -->
+		<div class="btn-wrap2 marT30">
+			<button type="button" class="btn btn-m color01 ">신청하기</button>
+			<button type="button" class="btn btn-m color02">병원유형별 세부정보</button>
+			<button type="button" class="btn btn-m color07">엑셀다운</button>	
+		</div>	
+		<!-- //버튼박스 -->
+		<!-- 스크롤 테이블 -->
+		<div class="table-scroll marT15 type1">			
+			<!-- 보여지는 표 상단 -->
+			<table class="table thead">	  
+				<colgroup>	    
+					<col style="width:80px"/>							
+					<col style="width:110px"/>	    
+					<col style="width:"/> 							
+					<col style="width:100px"/> 					
+					<col style="width:80px"/> 					
+					<col style="width:80px"/> 					
+					<col style="width:130px"/> 					
+					<col style="width:150px"/> 					
+					<col style="width:90px"/> 						
+					<col style="width:140px"/> 
+				</colgroup>	  
+				<thead>	
+					<tr>
+						<th>번호</th>
+						<th>신청일</th>
+						<th>병원명</th>
+						<th>병원유형</th>
+						<th>신청인</th>
+						<th>직함</th>
+						<th>HP</th>
+						<th>E-mail</th>
+						<th>구분</th>
+						<th class="last">협력체결일</th>
+					</tr>
+				</thead>
+			</table>			
+			<!-- //보여지는 표 상단 -->
+			<!-- 스크롤 되는 표  -->
+			<div class="scroll">
+				<table class="table tbody" summary="스크롤이 적용되는 테이블">	  
+					<caption><span class="offscreen">진료시간표 내용을 안내하는 표입니다.</span></caption>	  
+					<colgroup>	    
+						<col style="width:80px"/>							
+						<col style="width:110px"/>	    
+						<col style="width:"/> 							
+						<col style="width:100px"/> 					
+						<col style="width:80px"/> 					
+						<col style="width:80px"/> 					
+						<col style="width:130px"/> 					
+						<col style="width:150px"/> 					
+						<col style="width:90px"/> 						
+						<col style="width:123px"/> 
+					</colgroup>	  	  
+					<!-- 숨겨지는 표 상단 -->
+					<thead class="ir">	
+						<tr>
+							<th>번호</th>
+							<th>신청일</th>
+							<th>병원명</th>
+							<th>병원유형</th>
+							<th>신청인</th>
+							<th>직함</th>
+							<th>HP</th>
+							<th>E-mail</th>
+							<th>구분</th>
+							<th class="last">협력체결일</th>
+						</tr>
+					</thead>
+					<!-- //숨겨지는 표 상단 -->
+					<tbody>
+						<tr>
+							<td>798</td>
+							<td>2018-08-31</td>
+							<td class="textL">인천훈병원</td>
+							<td>2차병원</td>
+							<td>홍상훈</td>
+							<td>　</td>
+							<td>010-2222-2222</td>
+							<td>　</td>
+							<td>신청</td>
+							<td>0000-00-00</td>
+						</tr>
+						<!-- 선택된 병원 class action 추가 및 input 적용 -->
+						<tr class="action">
+							<td>797</td>
+							<td>2018-07-16</td>
+							<td class="textL">최태열내과의원</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>
+								<div class="select wid70 small"> 
+									<label for="div-a">체결</label> 
+									<select id="div-a" class="" aria-haspopup="true" aria-controls="select-menu" title="구분을 선택하세요" >    
+										<option lang="ko" value="1" role="menuitem">신청</option>    
+										<option lang="ko" value="2" role="menuitem">체결</option>	     
+										<option lang="ko" value="3" role="menuitem">부결</option>	     
+										<option lang="ko" value="4" role="menuitem">보류</option>	 
+									</select>	
+								</div>
+							</td>
+							<td><label><input type="text" id="data" class="wid100" title="협력체결일을 입력하세요" value="2018-07-16" /></label></td>
+						</tr>
+						<tr>
+							<td>796</td>
+							<td>2018-07-16</td>
+							<td class="textL">유승진내과의원</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>체결</td>
+							<td>2018-07-16</td>
+						</tr>
+						<tr>
+							<td>795</td>
+							<td>2018-07-16</td>
+							<td class="textL">만수K정형외과</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>체결</td>
+							<td>2018-07-16</td>
+						</tr>
+						<tr>
+							<td>794</td>
+							<td>2018-07-16</td>
+							<td class="textL">마음정원 정신건강의학과</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>체결</td>
+							<td>2018-07-16</td>
+						</tr>
+						<tr>
+							<td>798</td>
+							<td>2018-08-31</td>
+							<td class="textL">인천훈병원</td>
+							<td>2차병원</td>
+							<td>홍상훈</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>신청</td>
+							<td>0000-00-00</td>
+						</tr>
+						<tr>
+							<td>797</td>
+							<td>2018-07-16</td>
+							<td class="textL">최태열내과의원</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td>796</td>
+							<td>2018-07-16</td>
+							<td class="textL">유승진내과의원</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>체결</td>
+							<td>2018-07-16</td>
+						</tr>
+						<tr>
+							<td>795</td>
+							<td>2018-07-16</td>
+							<td class="textL">만수K정형외과</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>체결</td>
+							<td>2018-07-16</td>
+						</tr>
+						<tr>
+							<td>794</td>
+							<td>2018-07-16</td>
+							<td class="textL">마음정원 정신건강의학과</td>
+							<td>1차협진의원 </td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>체결</td>
+							<td>2018-07-16</td>
+						</tr>
+					</tbody>	
+				</table>
+			</div>			
+			<!-- //스크롤 되는 표  -->
+		</div>
+		<!-- //스크롤 테이블 -->
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

@@ -1,0 +1,266 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">외래교수선임</h1>
+	</div>
+	<div class="contents">
+		<!-- 검색박스 -->
+		<div class="search-box2">
+			<label>병원명<input type="text" id="" class="wid145" title="병원명을 입력하세요" /></label>
+			<button type="" class="btn-sheah">검색</button>
+			<label>주소<input type="text" id="" class="wid210" title="주소를 입력하세요" /></label>
+			<button type="" class="btn-sheah">검색</button>
+			<label>이름<input type="text" id="" class="wid105" title="이름을 입력하세요" /></label>
+			<button type="" class="btn-sheah">검색</button>
+			<button type="" class="btn color03">초기화</button>			
+		</div>
+		<!-- //검색박스 -->
+		<!-- 버튼박스 -->
+		<div class="btn-wrap2 marT30">
+			<button type="button" class="btn btn-m color02">이력서</button>
+			<button type="button" class="btn btn-m color02">추천서</button>
+			<button type="button" class="btn btn-m color07">수정</button>
+			<button type="button" class="btn btn-m color01 ">신규등록</button>	
+		</div>	
+		<!-- //버튼박스 -->
+		<!-- 스크롤 테이블 -->
+		<div class="table-scroll marT15 type1">			
+			<!-- 보여지는 표 상단 -->
+			<table class="table thead">	  
+				<colgroup>	    
+					<col style="width:55px"/>							
+					<col style="width:65px"/>	    
+					<col style="width:95px"/> 							
+					<col style="width:70px"/> 					
+					<col style="width:90px"/> 					
+					<col style="width:90px"/> 					
+					<col style="width:110px"/> 					
+					<col style="width:"/> 					
+					<col style="width:60px"/> 					
+					<col style="width:110px"/> 					
+					<col style="width:110px"/> 					
+					<col style="width:80px"/> 						
+					<col style="width:124px"/> 
+				</colgroup>	  
+				<thead>	
+					<tr>
+						<th>연번</th>
+						<th>이름</th>
+						<th>생년월일<br/>-성별</th>
+						<th>면허번호</th>
+						<th>등록일</th>
+						<th>수정일</th>
+						<th>휴대폰</th>
+						<th>E-mail</th>
+						<th>상태</th>
+						<th>전공과(교실)</th>
+						<th>병원명<br/>(근무처)</th>
+						<th>병원직위</th>
+						<th>병원연락처</th>
+					</tr>
+				</thead>
+			</table>			
+			<!-- //보여지는 표 상단 -->
+			<!-- 스크롤 되는 표  -->
+			<div class="scroll">
+				<table class="table tbody" summary="스크롤이 적용되는 테이블">	  
+					<caption><span class="offscreen">진료시간표 내용을 안내하는 표입니다.</span></caption>	  
+					<colgroup>	    
+						<col style="width:55px"/>							
+						<col style="width:65px"/>	    
+						<col style="width:95px"/> 							
+						<col style="width:70px"/> 					
+						<col style="width:90px"/> 					
+						<col style="width:90px"/> 					
+						<col style="width:110px"/> 					
+						<col style="width:"/> 					
+						<col style="width:60px"/> 					
+						<col style="width:110px"/> 					
+						<col style="width:110px"/> 					
+						<col style="width:80px"/> 						
+						<col style="width:107px"/> 
+					</colgroup>	  	  
+					<!-- 숨겨지는 표 상단 -->
+					<thead class="ir">	
+						<tr>
+							<th>연번</th>
+							<th>이름</th>
+							<th>생년월일-성별</th>
+							<th>면허번호</th>
+							<th>등록일</th>
+							<th>수정일</th>
+							<th>휴대폰</th>
+							<th>E-mail</th>
+							<th>상태</th>
+							<th>전공과(교실)</th>
+							<th>병원명(근무처)</th>
+							<th>병원직위</th>
+							<th>병원연락처</th>
+						</tr>
+					</thead>
+					<!-- //숨겨지는 표 상단 -->
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>김동현</td>
+							<td class="textL">840811-1</td>
+							<td class="textL">103421</td>
+							<td>2018.05.23</td>
+							<td>2018.06.01</td>
+							<td>1033616787</td>
+							<td class="textL">k951725@hanmail.net</td>
+							<td>재위촉</td>
+							<td>이비인후과</td>
+							<td class="textL">송도센트럴이비인후과</td>
+							<td>원장</td>
+							<td>327319972</td>
+						</tr>
+						<!-- 선택된 정보에 class  action추가  -->
+						<tr class="action">
+							<td>2</td>
+							<td>탁상도</td>
+							<td class="textL">680805</td>
+							<td class="textL">61100</td>
+							<td>2018.05.23</td>
+							<td>-</td>
+							<td>1068572568</td>
+							<td class="textL">drtsd@daum.net</td>
+							<td>신규</td>
+							<td>외과</td>
+							<td class="textL">소망요양병원</td>
+							<td>진료원장</td>
+							<td>032-427-1175</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>test</td>
+							<td class="textL">　</td>
+							<td class="textL">　</td>
+							<td>2018.05.23</td>
+							<td>-</td>
+							<td>　</td>
+							<td class="textL">1234</td>
+							<td>　</td>
+							<td>　</td>
+							<td class="textL">　</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>김복기</td>
+							<td class="textL">19791129-남</td>
+							<td class="textL">83884</td>
+							<td>2018.05.23</td>
+							<td>-</td>
+							<td>1029429110</td>
+							<td class="textL">patchadams98@hotmail.com</td>
+							<td>신규</td>
+							<td>소아과학교실</td>
+							<td class="textL">사과나무소아청소년과의원</td>
+							<td>원장</td>
+							<td>325619575</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>김재근</td>
+							<td class="textL">19790823</td>
+							<td class="textL">94406</td>
+							<td>2018.05.23</td>
+							<td>-</td>
+							<td>010-2385-9246</td>
+							<td class="textL">jecs79@naver,com</td>
+							<td>신규</td>
+							<td>성형외과</td>
+							<td class="textL">연세이원성형외과</td>
+							<td>원장</td>
+							<td>031-381-7321</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>정민경</td>
+							<td class="textL">710126-2</td>
+							<td class="textL">57745</td>
+							<td>　</td>
+							<td>　</td>
+							<td>010-4701-3167</td>
+							<td class="textL">　</td>
+							<td>재위촉</td>
+							<td>소아청소년과학</td>
+							<td class="textL">인천사랑병원</td>
+							<td>과장</td>
+							<td>457-2000</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>오재일</td>
+							<td class="textL">71.03.04</td>
+							<td class="textL">　</td>
+							<td>　</td>
+							<td>　</td>
+							<td>010-9032-7799</td>
+							<td class="textL">　</td>
+							<td>신규</td>
+							<td>예방의학</td>
+							<td class="textL">나사렛국제병원</td>
+							<td>과장</td>
+							<td>899-9999</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>김정훈</td>
+							<td class="textL">78.06.11</td>
+							<td class="textL">91229</td>
+							<td>　</td>
+							<td>　</td>
+							<td>010-8749-2134</td>
+							<td class="textL">　</td>
+							<td>신규</td>
+							<td>예방의학</td>
+							<td class="textL">나사렛국제병원</td>
+							<td>과장</td>
+							<td>899-9999</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>서정철</td>
+							<td class="textL">76.3.18</td>
+							<td class="textL">75814</td>
+							<td>　</td>
+							<td>　</td>
+							<td>010-2114-9813</td>
+							<td class="textL">　</td>
+							<td>신규</td>
+							<td>예방의학</td>
+							<td class="textL">나사렛국제병원</td>
+							<td>과장</td>
+							<td>899-9999</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>민현규</td>
+							<td class="textL">76.11.16</td>
+							<td class="textL">88140</td>
+							<td>　</td>
+							<td>　</td>
+							<td>017-235-6674</td>
+							<td class="textL">　</td>
+							<td>신규</td>
+							<td>응급의학과학</td>
+							<td class="textL">나사렛국제병원</td>
+							<td>과장</td>
+							<td>899-9999</td>
+						</tr>
+					</tbody>	
+				</table>
+			</div>			
+			<!-- //스크롤 되는 표  -->
+		</div>
+		<!-- //스크롤 테이블 -->
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

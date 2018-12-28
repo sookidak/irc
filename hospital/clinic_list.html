@@ -1,0 +1,125 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">1차 협진의원</h1>
+	</div>
+	<div class="contents">
+		<!-- 검색박스 -->
+		<div class="search-box2">
+			<label>지역1<input type="text" id="add1" class="wid270" title="지역1을 입력하세요" /></label>
+			<label>지역2<input type="text" id="add2" class="wid270" title="지역2를 입력하세요" /></label>
+			<label>병원명<input type="text" id=hos class="wid270" title="병원명을 입력하세요" /></label>
+			<button type="" class="btn-sheah">검색</button>		
+		</div>
+		<!-- //검색박스 -->
+		<!-- 버튼박스 -->
+		<div class="btn-wrap2 marT30">
+			<button type="button" class="btn btn-m color07">출력</button>
+			<button type="button" class="btn btn-m color07">수정</button>
+			<button type="button" class="btn btn-m color03">삭제</button>
+			<button type="button" class="btn btn-m color02 ">지도보기</button>	
+		</div>	
+		<!-- //버튼박스 -->
+		<!-- 스크롤 테이블 -->
+		<div class="table-scroll marT15 type1">			
+			<!-- 보여지는 표 상단 -->
+			<table class="table thead">	  
+				<colgroup>	    
+					<col style="width:130px"/>							
+					<col style="width:90px"/>	    
+					<col style="width:90px"/> 							
+					<col style="width:230px"/> 						
+					<col style="width:"/> 								
+					<col style="width:167px"/> 
+				</colgroup>	  
+				<thead>	
+					<tr>
+						<th>구분</th>
+						<th>지역1</th>
+						<th>지역2</th>
+						<th>병원명</th>
+						<th>주소</th>
+						<th class="last">전화번호</th>
+					</tr>
+				</thead>
+			</table>			
+			<!-- //보여지는 표 상단 -->
+			<!-- 스크롤 되는 표  -->
+			<div class="scroll">
+				<table class="table tbody" summary="스크롤이 적용되는 테이블">	  
+					<caption><span class="offscreen">진료시간표 내용을 안내하는 표입니다.</span></caption>	  
+					<colgroup>	    
+						<col style="width:130px"/>							
+						<col style="width:90px"/>	    
+						<col style="width:90px"/> 							
+						<col style="width:230px"/> 						
+						<col style="width:"/> 								
+						<col style="width:150px"/> 
+					</colgroup>	  	  
+					<!-- 숨겨지는 표 상단 -->
+					<thead class="ir">	
+						<tr>
+							<th>구분</th>
+							<th>지역1</th>
+							<th>지역2</th>
+							<th>병원명</th>
+							<th>주소</th>
+							<th>전화번호</th>
+						</tr>
+					</thead>
+					<!-- //숨겨지는 표 상단 -->
+					<tbody>
+						<tr>
+							<td>1차협진의원</td>
+							<td>인천</td>
+							<td>서구</td>
+							<td class="textL">유승진내과의원</td>
+							<td class="textL">인천 서구 봉오재3로 90</td>
+							<td>032-566-0111</td>
+						</tr>
+						<!-- 선택된 정보에 class  action추가  -->
+						<tr class="action">
+							<td>1차협진의원</td>
+							<td>인천</td>
+							<td>남동구</td>
+							<td class="textL">만수K정형외과</td>
+							<td class="textL">인천 남동구 장승남로33번길 21</td>
+							<td>032-461-3659</td>
+						</tr>
+						<tr>
+							<td>1차협진의원</td>
+							<td>인천</td>
+							<td>연수구</td>
+							<td class="textL">마음정원 정신건강의학과</td>
+							<td class="textL">인천 연수구 신송로 153</td>
+							<td>032-833-3950</td>
+						</tr>
+						<tr>
+							<td>1차협진의원</td>
+							<td>인천</td>
+							<td>남동구</td>
+							<td class="textL">바른삼성이비인후과</td>
+							<td class="textL">인천 남동구 담방로 45</td>
+							<td>032-464-0706</td>
+						</tr>
+						<tr>
+							<td>1차협진의원</td>
+							<td>인천</td>
+							<td>연수구</td>
+							<td class="textL">이강연유외과의원</td>
+							<td class="textL">인천 연수구 앵고개로246번길 10</td>
+							<td>032-818-6825</td>
+						</tr>
+					</tbody>	
+				</table>
+			</div>			
+			<!-- //스크롤 되는 표  -->
+		</div>
+		<!-- //스크롤 테이블 -->
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
