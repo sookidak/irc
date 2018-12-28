@@ -1,0 +1,184 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">외래교수선임</h1>
+	</div>
+	<div class="contents">
+		<!-- 외래교수선임 입력 폼 -->
+		<table class="table table-type4">	  
+			<caption><span class="offscreen">외래교수선임 등록을 위한 입력표입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:180px"/>	    
+				<col style=""/>	
+				<col style="width:180px"/>	    
+				<col style=""/>  
+			</colgroup>	  
+			<tbody>	    
+				<tr>	         
+					<th>
+						<label for="name">이름<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="name" maxlength="20" title="이름 입력" value="김동현" />
+					</td>	        
+					<th>
+						<label for="birth">생년월일-성별<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="birth" maxlength="8" title="생년월일-성별 입력" value="840811-1" />
+					</td>	 	    
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="license">면허번호<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="license" maxlength="10" title="면허번호 입력" value="103421" />
+					</td>	        
+					<th>
+						<label for="hp01">휴대폰<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-num">
+							<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum"/><span class="input-text">-</span>	
+							<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum" /></label><span class="input-text">-</span>
+							<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum"/></label>
+						</div>	
+					</td>	 	    
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="email01">e-mail<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-email">
+							<input type="text" id="email01" maxlength="20" title="이메일 앞 주소 입력" class="emil2" value="k951725" />
+							<span>@</span>
+							<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소 입력" class="emil" value="hanmail.net" /></label>
+							<div class="select emil">
+								<label for="email-sel">직접 입력</label>
+								<select id="email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">   
+									<option value="" role="menuitem">직접 입력</option>
+									<option value="chol.com" role="menuitem">chol.com</option>
+									<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+									<option value="empal.com" role="menuitem">empal.com</option>
+									<option value="freechal.com" role="menuitem">freechal.com</option>
+									<option value="hanmail.net" role="menuitem">hanmail.net</option>
+									<option value="hanmir.com" role="menuitem">hanmir.com</option>
+									<option value="hitel.net" role="menuitem">hitel.net</option>
+									<option value="hotmail.com" role="menuitem">hotmail.com</option>
+									<option value="inha.com" role="menuitem">inha.com</option>
+									<option value="intizen.com" role="menuitem">intizen.com</option>
+									<option value="kebi.com" role="menuitem">kebi.com</option>
+									<option value="korea.com" role="menuitem">korea.com</option>
+									<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+									<option value="nate.com" role="menuitem">nate.com</option>
+									<option value="naver.com" role="menuitem">naver.com</option>
+									<option value="netian.com" role="menuitem">netian.com</option>
+									<option value="orgio.net" role="menuitem">orgio.net</option>
+									<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+								</select>
+							</div>
+						</div>
+					</td>	        
+					<th>
+						<label for="div-a">구분<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="radio">
+							<input type="radio" id="div-a" name="select1"  value="1" aria-checked="true">
+							<label for="div-a" >재위촉</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="div-b" name="select1"  value="1" aria-checked="true" checked>
+							<label for="div-b" >신규</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="div-c" name="select1"  value="1" aria-checked="true">
+							<label for="div-c" >해촉</label>
+						</div>
+					</td>	 	    
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="dept">전공과(교실)<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td colspan="3">
+						<input type="text" id="dept" maxlength="20" title="전공과(교실) 입력" class="wide" value="이비인후과" />
+					</td>	        
+
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="edu">최종학력</label>
+					</th>	      
+					<td>
+						<input type="text" id="edu" maxlength="10" title="최종학력 입력" value="대학교졸업" />
+					</td>	        
+					<th>
+						<label for="degree">최종학위</label>
+					</th>	      
+					<td>
+						<input type="text" id="degree" maxlength="10" title="최종학위 입력" value="학사" />
+					</td>	 	    
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="school">출신학위교</label>
+					</th>	      
+					<td>
+						<input type="text" id="school" maxlength="20" title="출신학위교 입력" value="한림대학교" />
+					</td>	        
+					<th>
+						<label for="year">졸업년도</label>
+					</th>	      
+					<td>
+						<input type="text" id="year" maxlength="4" title="졸업년도 입력" value="2010" />
+					</td>	 	    
+				</tr> 
+				<tr>	         
+					<th>
+						<label for="hos">병원명(근무처)<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="hos" maxlength="20" title="병원명(근무처) 입력" value="송도센트럴이비인후과" />
+					</td>	        
+					<th>
+						<label for="spot">병원직위</label>
+					</th>	      
+					<td>
+						<input type="text" id="spot" maxlength="10" title="병원직위 입력" value="원장" />
+					</td>	 	    
+				</tr>  
+				<tr>	         
+					<th>
+						<label for="ph01">병원연락처<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>						      
+					<td>
+						<div class="input-num">
+							<input type="text" id="ph01" maxlength="3" title="병원연락처 앞번호 입력" value="031" class="phoneNum"/><span class="input-text">-</span>	
+							<label><input type="text" id="ph02" maxlength="4" title="병원연락처 중간번호 입력" value="1234"  class="phoneNum" /></label><span class="input-text">-</span>
+							<label><input type="text" id="ph03" maxlength="4" title="병원연락처 뒷번호 입력" value="1234" class="phoneNum"/></label>
+						</div>	
+					</td>	        
+					<th>
+						<label for="add">병원주소</label>
+					</th>	      
+					<td>
+						<input type="text" id="add" maxlength="50" title="병원주소 입력" value="인천 연수구 해돋이로 168 혜인프라자 4층" />
+					</td>	 	    
+				</tr>  
+			</tbody>	
+		</table>
+		<!-- //외래교수선임 입력 폼 -->
+		<div class="btn-wrap marT50">
+			<button type="button" class="btn btn-l color02">저장</button>
+			<button type="button" class="btn btn-l color03 ">취소</button>	
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

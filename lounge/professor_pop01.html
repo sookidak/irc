@@ -1,0 +1,235 @@
+@@include('../inc/head.html')
+<!-- popup -->
+<section class="popup" id="popup">
+	<h1 class="title-style1">이력서</h1>
+	<!-- 이력서 -->
+	<!-- 기본정보 -->
+	<table class="table table-type4 marT30">	  
+		<caption><span class="offscreen">이력서출력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:160px"/>	    
+			<col style="width:310px"/>	
+			<col style="width:160px"/>	    
+			<col style="width:310px"/>  
+		</colgroup>	  
+		<tbody>	    
+			<tr>	         
+				<th>
+					<label for="name">이름</label>
+				</th>	      
+				<td>
+					<input type="text" id="name" maxlength="" title="이름 입력" value="김동현" disabled />
+				</td>	        
+				<th>
+					<label for="birth">생년월일-성별</label>
+				</th>	      
+				<td>
+					<input type="text" id="birth" maxlength="" title="생년월일-성별 입력"  value="840811-1" disabled/>
+				</td>	 	    
+			</tr> 
+			<tr>	         
+				<th>
+					<label for="license">면허번호</label>
+				</th>	      
+				<td>
+					<input type="text" id="license" maxlength="" title="면허번호 입력" value="103421" disabled/>
+				</td>	        
+				<th>
+					<label for="hp01">휴대폰</label>
+				</th>	      
+				<td>
+					<div class="input-num">
+						<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text">-</span>	
+						<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234" class="phoneNum" disabled/></label><span class="input-text">-</span>
+						<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력"  value="1234" class="phoneNum" disabled/></label>
+					</div>	
+				</td>	 	    
+			</tr> 
+			<tr>	         
+				<th>
+					<label for="email01">E-mail</label>
+				</th>	      
+				<td colspan="3">
+					<div class="input-email">
+						<input type="text" id="email01" maxlength="20" title="이메일 앞 주소 입력" class="emil2" value="k951725" disabled/>
+						<span>@</span>
+						<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소 입력" class="emil" value="hanmail.net"  disabled/></label>
+						<div class="select emil">
+							<label for="email-sel">직접 입력</label>
+							<select id="email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택" disabled>    
+								<option value="" role="menuitem">직접 입력</option>
+								<option value="chol.com" role="menuitem">chol.com</option>
+								<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+								<option value="empal.com" role="menuitem">empal.com</option>
+								<option value="freechal.com" role="menuitem">freechal.com</option>
+								<option value="hanmail.net" role="menuitem">hanmail.net</option>
+								<option value="hanmir.com" role="menuitem">hanmir.com</option>
+								<option value="hitel.net" role="menuitem">hitel.net</option>
+								<option value="hotmail.com" role="menuitem">hotmail.com</option>
+								<option value="inha.com" role="menuitem">inha.com</option>
+								<option value="intizen.com" role="menuitem">intizen.com</option>
+								<option value="kebi.com" role="menuitem">kebi.com</option>
+								<option value="korea.com" role="menuitem">korea.com</option>
+								<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+								<option value="nate.com" role="menuitem">nate.com</option>
+								<option value="naver.com" role="menuitem">naver.com</option>
+								<option value="netian.com" role="menuitem">netian.com</option>
+								<option value="orgio.net" role="menuitem">orgio.net</option>
+								<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+							</select>
+						</div>
+					</div>
+				</td>			
+			</tr> 			
+			<tr>	         
+				<th>
+					<label for="hos">병원명</label>
+				</th>	      
+				<td colspan="3">
+					<input type="text" id="hos" maxlength="" title="병원명(근무처) 입력"  value="송도센트럴이비인후과" disabled/>
+				</td>		 	    
+			</tr>  
+			<tr>
+				<th>
+					<label for="add">병원주소</label>
+				</th>	      
+				<td colspan="3">
+					<input type="text" id="add" maxlength="" title="병원주소 입력" class="wide" value="인천 연수구 해돋이로 168 혜인프라자 4층"  disabled/>
+				</td>	
+			</tr>
+			<tr>	        
+				<th>
+					<label for="spot">직위</label>
+				</th>	      
+				<td>
+					<input type="text" id="spot" maxlength="" title="직위 입력" value="원장" disabled/ >
+				</td>        
+				<th>
+					<label for="ph01">병원연락처</label>
+				</th>						      
+				<td>
+					<div class="input-num">
+						<input type="text" id="ph01" maxlength="3" title="병원연락처 앞번호 입력" value="031" class="phoneNum" disabled/><span class="input-text">-</span>	
+						<label><input type="text" id="ph02" maxlength="4" title="병원연락처 중간번호 입력" value="1234"  class="phoneNum" disabled/></label><span class="input-text">-</span>
+						<label><input type="text" id="ph03" maxlength="4" title="병원연락처 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+					</div>	
+				</td>   
+			</tr>  
+		</tbody>	
+	</table>
+	<!-- //기본정보 -->
+	<h2 class="title-style4 marT60">학력</h2>
+	<!-- 학력 -->
+	<table class="table table-type1 marT20">	  
+		<caption><span class="offscreen">이력서출력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:318px"/>	    
+			<col style="width:304px"/>	
+			<col style="width:318px"/>	 
+		</colgroup>	  
+		<thead>
+			<tr>
+				<th>구분</th>
+				<th>전공</th>
+				<th>학위</th>
+			</tr>
+		</thead>
+		<tbody>	  
+			<tr>
+				<td class="textR"><label><input type="text" id="school" class="wid112" value="한림대" disabled/> 학교 </label><label><input type="text" id="year" class="wid80" value="2010" disabled/> 년도(卒)</label></td>
+				<td><label><input type="text" id="dept" value="의학과" disabled/></label></td>
+				<td class="textL"><label><input type="text" id="bachelor" value="학사" disabled/></label></td>
+			</tr> 
+			<tr>
+				<td class="textR"><label><input type="text" id="master-sch" class="wid200" value="한림대" /> 대학원(석사)</label></td>
+				<td><label><input type="text" id="master-year" value="경영대학원" /></label></td>
+				<td class="textL"><label><input type="text" id="master" value="석사" /></label></td>
+			</tr> 
+			<tr>
+				<td class="textR"><label><input type="text" id="doctor-sch" class="wid200" value="" /> 대학원(박사)</label></td>
+				<td><label><input type="text" id="doctor-year" value="" /></label></td>
+				<td class="textL"><label><input type="text" id="doctor" value="" /></label></td>
+			</tr>  
+		</tbody>	
+	</table>
+	<!-- //학력 -->
+	<h2 class="title-style4 marT30">경력</h2>
+	<!-- 경력 -->
+	<table class="table table-type1 marT20">	  
+		<caption><span class="offscreen">이력서출력을 위한 표입니다.</span></caption> 	  
+		<colgroup>	    
+			<col style="width:318px"/>	    
+			<col style="width:304px"/>	
+			<col style="width:318px"/>	 
+		</colgroup>	  
+		<thead>
+			<tr>
+				<th>근무처</th>
+				<th>직위</th>
+				<th>근무기관</th>
+			</tr>
+		</thead>
+		<tbody>	    
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos01" value="한림대학교성심병원" /></label></td>
+				<td><label><input type="text" id="career-spot01" value="인턴" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year01" value="2010" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos02" value="한림대학교성심병원" /></label></td>
+				<td><label><input type="text" id="career-spot02" value="인턴" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year02" value="2010" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos03" value="한림대학교성심병원" /></label></td>
+				<td><label><input type="text" id="career-spot03" value="인턴" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year03" value="2010" /></label></td>
+			</tr>  
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos04" value="한림대학교성심병원" /></label></td>
+				<td><label><input type="text" id="career-spot04" value="인턴" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year04" value="2010" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos05" value="한림대학교성심병원" /></label></td>
+				<td><label><input type="text" id="career-spot05" value="인턴" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year05" value="2010" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos06" value="" /></label></td>
+				<td><label><input type="text" id="career-spot06" value="" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year06" value="" /></label></td>
+			</tr>  
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos07" value="" /></label></td>
+				<td><label><input type="text" id="career-spot07" value="" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year07" value="" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos08" value="" /></label></td>
+				<td><label><input type="text" id="career-spot08" value="" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year08" value="" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos09" value="" /></label></td>
+				<td><label><input type="text" id="career-spot09" value="" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year09" value="" /></label></td>
+			</tr>
+			<tr>
+				<td class="textR"><label><input type="text" id="career-hos10" value="" /></label></td>
+				<td><label><input type="text" id="career-spot10" value="" /></label></td>
+				<td class="textL"><label><input type="text" id="career-year10" value="" /></label></td>
+			</tr>
+		</tbody>	
+	</table>
+	<!-- //경력 -->
+	<p class="text-hos">인하대학교 의과대학</p>
+	<!-- //이력서 -->
+	<div class="btn-wrap marT50">
+		<button type="button" class="btn btn-l color01">출력</button>
+		<button type="button" class="btn btn-l color03 ">수정</button>	
+	</div>
+</section>
+<!-- //popup -->
+</body>
+</html>

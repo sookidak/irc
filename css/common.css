@@ -134,6 +134,7 @@
 .color-style2{color:#2ca48f !important}
 .color-style3{color:#e3751c !important}
 .color-style4{color:#777777 !important}
+.color-style5{color:#333333 !important}
 
 /* component */
 .btn-m{height:45px;min-width:130px;padding:0 30px;}
@@ -152,13 +153,19 @@ background: -moz-linear-gradient(-45deg, #0b79b6 0%, #0b79b6 31%, #199da3 100%);
 background: -webkit-linear-gradient(-45deg, #0b79b6 0%,#0b79b6 31%,#199da3 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #0b79b6 0%,#0b79b6 31%,#199da3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b79b6', endColorstr='#199da3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
-.btn.download{background: #fff;height:50px;font-size:14px;width: 240px;color:#0770bb;border:1px solid #0770bb;font-family: 'NotoKrR'; border-radius: 2px; margin-right: 8px; }
+button.download{background: #fff;height:50px;font-size:14px;width: 240px;color:#0770bb;border:1px solid #0770bb;font-family: 'NotoKrR'; border-radius: 2px; margin-right: 8px; }
 button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa; color:#777; border-radius: 20px; margin: 0 auto; display: block;   }
+.btn.color07{background: #3798b8}/* 청녹 */
+
 
 /* button group */
 .btn-wrap{text-align:center; }
 .btn-wrap button{margin-left: 8px; cursor: pointer;}
 .btn-wrap button:first-child {margin-left: 0px}
+
+/* button group */
+.btn-wrap2{text-align:right; }
+.btn-wrap2 button{margin-left: 3px; cursor: pointer;}
 
 
 
@@ -208,7 +215,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 /* radio */
 .radio{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;}
 .radio input[type=radio]{position:absolute;left:3px;top:3px;}
-.radio label{display:inline-block;position:relative;padding-left:35px;min-width:30px;min-height:30px;line-height:30px;color:#777;}
+.radio label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
 .radio label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:#fff;cursor:pointer;border:1px solid #ddd;box-sizing:border-box;border-radius:25px;z-index:10;}
 .radio input[type=radio]:checked +label:before{border:6px solid #199da3;}
 .radio input[type=radio]:disabled +label:before{background: #eee;}
@@ -322,7 +329,7 @@ ol.list-type1 > li:before{display: none}
 .table th{font-size: 16px; font-family: 'NotoKrR'; font-weight: normal; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;} 
 .table th:first-child, .table td:first-child{ border-left: 0 }
 .table th.line{border-right: 1px solid #ddd;}
-.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: left; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; }
+.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; }
 .table td.line{border-left: 1px solid #eee !important;}
 .table td.pad0{padding:18px 0 !important}
 .table th.pad0{padding:18px 0 !important}
@@ -358,6 +365,21 @@ ol.list-type1 > li:before{display: none}
 .table-type3 .check-list{ margin-top: 30px; }
 .table-type3 .check-list:after { display: block; content: ""; }
 .table-type3 .check-list li{ float: left; width: 245px; height: 45px}
+
+
+/* table - table-type4 */
+.table-type4{border-top:2px solid #bbbbbb;  margin-top: 15px; }
+.table-type4 th{border:1px solid #eeeeee;text-align: left;padding-left: 30px;border-right: 0; background: #fff; height: 60px; }
+.table-type4 th .acc{color: #199da3; margin-left:2px; position: relative;top: 4px; }
+.table-type4 td{text-align: left; border-left: 0; border-right: 0; border-left: 0;padding: 10px 0; line-height: 24px; font-size: 16px; color: #333}
+.table-type4 input[type=text], .table-type4 .select{width: 380px;vertical-align: middle; }
+.table-type4 .select label{padding-right: 40px; overflow: hidden; word-break: break-all;}
+.table-type4 .input-num .phoneNum{width: 115px !important;}
+.table-type4 .input-text{margin-left:5px; }
+.table-type4 .input-email .emil{width: 124px !important;}
+.table-type4 .input-email .emil2{width: 110px !important;}
+.table-type4 input.wide{width: 970px !important;}
+.table-type4 .radio label{color: #333}
 
 
 /* badge */
@@ -423,6 +445,16 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .search-box button{ width: 120px; min-width: 120px; height: 60px;vertical-align: top;border-radius: 0  10px 0px 0; background: url(../img/icon_components.png) no-repeat left -15px #0770bb; padding-left: 63px; text-align: left;font-family: 'NotoKrR'; font-weight: normal; letter-spacing: -1px;margin-left:-1px;}
 .search-result{font-size: 14px; color: #777; margin-bottom: 15px;}
 .search-result .acc{ color: #0770bb ; font-family: 'NotoKrR'; vertical-align: top;}
+
+
+.search-box2{ background-color: #f8f8f8; height: 100px; padding-top: 30px; }
+.search-box2 .btn-sheah{display: inline-block; background: #0770bb;position: relative; width: 100px; height: 40px; color: #fff; vertical-align: middle;font-size: 16px;font-family: 'NotoKrR';  font-weight: normal; padding-left: 50px; text-align: left;margin-left: 2px;}
+.search-box2 .btn-sheah:before{content: "";display: block; width: 20px; height: 20px; background: url(../img/icon_components.png) no-repeat -20px -120px; position: absolute; top:11px; left: 23px;   }
+.search-box2 input[type=text], .search-box2 .select{margin-left: 9px;}
+.search-box2 .color03{vertical-align: middle;margin-left: 27px; }
+.search-box2 > label{font-size: 16px;font-family: 'NotoKrR';  font-weight: normal;color: #000; height: 40px; display: inline-block; vertical-align: middle;margin-left: 30px; }
+
+
 
 /* board -list */
 .board-wrap {min-height: 500px}
@@ -504,6 +536,25 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 #layer-box .layer-close .btn-close{width: 16px; height: 16px; background:url('../img/icon_component.png') no-repeat -34px -172px; position: absolute;top:15px;right: 30px;}
 
 
+/* popup */
+.popup{margin:0 auto; padding:30px; overflow-y:auto;overflow-x:hidden; width: 1000px   }
+/* popup - table-type4 */
+.popup .table-type4 input[type=text], .popup .table-type4 .select{width: 280px; }
+.popup .table-type4 .input-num .phoneNum{width: 82px !important;}
+.popup .table-type4 .input-email .emil{width: 185px !important;}
+.popup .table-type4 .input-email .emil2{width: 160px !important;}
+.popup .table-type4 input.wide{width: 750px !important;}
+.popup .table-type1 input[type=text], .popup .table-type4 .select{width: 273px; }
+.popup .table-type1 td{padding: 15px; color: #333}
+.popup .table-type2 td, .popup .table-type2 th{text-align: left; padding-left: 30px ; font-size: 16px; height: 60px;}
+.popup .text-hos{font-family: 'NotoKrR'; font-size: 30px; color: #000;font-weight: normal; text-align: center; margin-top: 30px; }
+.popup .sign{text-align: right;}
+.popup .sign table{width: 466px; display: inline-block; }
+.popup .sign th{ height: 60px; padding: 0 }
+.popup .sign:after{content:'';display:block;clear:both;}
+.popup .list-type1 li{font-size: 14px;margin-bottom: 12px;}
+
+
 
 /* 기본 CSS */
 .textR{text-align:right !important;}
@@ -532,6 +583,18 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .marL20{margin-left: 20px !important}
 .padL15{padding-left: 15px !important}
 .padR0{padding-right: 0px !important}
+.wid80{width: 80px !important}
+.wid105{width: 105px !important}
+.wid112{width: 112px !important}
+.wid145{width: 145px !important}
+.wid185{width: 185px !important}
+.wid200{width: 200px !important}
+.wid210{width: 210px !important}
+.wid270{width: 270px !important}
+.wid395{width: 395px !important}
+.wid470{width: 470px !important}
+
+
 
 
 /* 찾아오시는 길 */
@@ -606,13 +669,18 @@ ul.bxslider {  list-style: none;}
 .table-scroll thead.ir{width: 1px;height: 1px; position: absolute;top: -99999px;}
 .table-scroll{border:1px solid #ddd; border-top:2px solid #bbb }
 .table-scroll thead th{border-top:0}
-.table-scroll .last{padding-right: 37px;}
-.table-scroll .scroll{height: 500px; overflow-y:scroll; }
+.table-scroll .scroll{height: 650px; overflow-y:scroll; }
+
+.table-scroll.type1 td{padding:17px 10px ; word-break: break-all;line-height: 22px;}
+.table-scroll.type1 th{padding:17px 5px ;}
+.table-scroll.type1 tr{cursor: pointer;}
+.table-scroll.type1 tr.action td{background: #f8f8f8; color:#0770bb; font-family:'notoKrM',sans-serif; font-weight: normal; }
 
 
 /* 진료예약 */
 .res-time {margin-top: 25px;}
 .res-time td, .res-time th{text-align: center; padding:10px 5px ; line-height: 24px;word-break: keep-all;}
+.res-time .scroll{height: 587px; }
 .res-time .last{padding-right: 22px;}
 .res-time .textL{padding-left: 15px}
 
