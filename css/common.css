@@ -313,8 +313,8 @@ ol.list-type1 > li:before{display: none}
 .text-style3{font-family: 'NotoKrL'; font-size: 14px; color: #0770bb;font-weight: normal;}
 .text-style4{font-family: 'NotoKrL'; font-size: 14px; color: #777;font-weight: normal;}
 .text-style5{font-family: 'NotoKrL'; font-size: 16px; color: #777;font-weight: normal;}
-.text-style6{font-family: 'NotoKrR'; font-size: 14px !important; color: #000;font-weight: normal;}
-.text-nec{vertical-align: bottom; color: #199da3; font-size: 14px;font-family: 'NotoKrR'; float: right; display: inline-block; position: relative;top: 5px; }
+.text-style6{font-family: 'NotoKrL'; font-size: 14px; color: #333;font-weight: normal;}
+
 .lineH{line-height: 24px;}
 
 .NotoKrL {font-family: 'NotoKrL',sans-serif; font-weight: normal; }
@@ -369,7 +369,8 @@ ol.list-type1 > li:before{display: none}
 
 /* table - table-type4 */
 .table-type4{border-top:2px solid #bbbbbb;  margin-top: 15px; }
-.table-type4 th{border:1px solid #eeeeee;text-align: left;padding-left: 30px;border-right: 0; background: #fff; height: 60px; }
+.table-type4 thead th{font-size: 18px; font-family: 'NotoKrM'; font-weight: normal; color: #000000 ; background-color: #f6f6f6; height: 70px; }
+.table-type4 th{border:1px solid #eeeeee;text-align: left;padding-left: 30px;padding-right: 0px;border-right: 0; background: #fff; height: 60px; }
 .table-type4 th .acc{color: #199da3; margin-left:2px; position: relative;top: 4px; }
 .table-type4 td{text-align: left; border-left: 0; border-right: 0; border-left: 0;padding: 10px 0; line-height: 24px; font-size: 16px; color: #333}
 .table-type4 input[type=text], .table-type4 .select{width: 380px;vertical-align: middle; }
@@ -379,7 +380,25 @@ ol.list-type1 > li:before{display: none}
 .table-type4 .input-email .emil{width: 124px !important;}
 .table-type4 .input-email .emil2{width: 110px !important;}
 .table-type4 input.wide{width: 970px !important;}
-.table-type4 .radio label{color: #333}
+.table-type4 label{color: #333}
+.table-type4 .radio-text span{vertical-align: middle; display: inline-block; position: relative;top: -1px;}
+
+/* 2차 종합병원 */
+.table-type4 .sub-table{padding:0 ;}
+.table-type4 .sub-table div.cell{border-left: 1px solid #eee; width: 280px; display: table-cell;vertical-align: middle;height: 110px; padding: 10px 30px; color: #777; text-align: right;line-height: 40px;}
+.table-type4 .sub-table div.cell label{color: #333; text-align: left; width: 187px; display: inline-block; height: 40px;}
+.table-type4 .sub-table div.cell label input{float: right;  width: 70px !important}
+.table-type4 .sub-table div.cell label:nth-child(n+2){margin-top: 10px}
+.table-type4 .sub-table div.cell:first-child{border-left:0; padding-left: 0; width:220px }
+.table-type4 .sub-table div.cell:first-child label{width: 157px}
+.table-type4 .sub-table div.cell:first-child{border-left:0}
+
+.table-type4 .dept-list li{float: left;width:280px ;padding-left: 30px}
+.table-type4 .dept-list li label{line-height: 40px; padding-right: 30px; display: block;}
+.table-type4 .dept-list li input{float: right; width: 70px !important}
+.table-type4 .dept-list li:nth-child(n+4){margin-top: 10px}
+.table-type4 .dept-list li:nth-child(3n+1){width:220px ;padding-left: 0px}
+
 
 
 /* badge */
@@ -392,16 +411,27 @@ ol.list-type1 > li:before{display: none}
 :-ms-input-placeholder { /* Internet Explorer 10-11 */color: #777;}
 ::placeholder {color: #777;}
 
-input[type=text], input[type=password]{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-family: 'NotoKrL'; color: #777; background: #fff; height: 40px; padding: 0 20px}
+input[type=text], input[type=password], textarea{line-height:normal; border: 1px solid #ddd; font-size: 14px; font-family: 'NotoKrL'; color: #777; background: #fff; height: 40px; padding: 0 20px}
 label.hide{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
-input[type=text]:disabled, input[type=password]:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
-input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
+input[type=text]:disabled, input[type=password]:disabled, textarea:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
+input[type=text]:focus, input[type=password]:focus, textarea:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
+
+textarea{min-height: 100px; padding-top: 10px; }
 
 .select { position: relative; width: 200px; z-index: 1; height: 40px; font-size: 14px; font-weight:normal;  font-family: 'NotoKrL'; color: #777; display: inline-block;} 
 .select label { position: absolute; top: 0px; left: 0px; width: 100%; z-index: -1;line-height:normal; border: 1px solid #ddd;  background: url(../img/icon_components_select_off.png) no-repeat right center #fff; height: 100%; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:40px; border-radius: 0 ;  vertical-align: middle; line-height:38px;} 
 .select select { width: 100%; height: 100%;  line-height: 24px;  font-family: inherit;  font-size: inherit; font-weight:inherit;  border: 0; padding:10px 20px; opacity: 0; filter:alpha(opacity=0);  -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .select.disabled label{ border-color:#eee; color: #777; background: #f8f8f8; }
-.select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
+.select:focus label, .select:hover label{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center #fff }
+
+.select.small select{padding:10px }
+.select.small label {  background: #fff;  padding-right:20px;  padding-left: 10px;} 
+.select.small label:after{content: "";display: block; width:20px ;height:10px ; position: absolute;top:15px ;right:5px ;background: url(../img/icon_components_select_off.png) no-repeat}
+.select.small:focus label:after, .select.small:hover label:after{  background:url(../img/icon_components_select_on.png) no-repeat}
+
+
+
+
 
 
 .input-email, .input-num, .input-add, .input-rrn{text-align: left;} 
@@ -433,7 +463,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 
 /* agree */
 .agree-area{ margin-bottom: 50px; text-align: left;}
-.agree-area .title-style4 .acc {color: #cd0e0e; vertical-align: top;}
+.agree-area .title-style3 .acc {color: #cd0e0e; vertical-align: top;}
 .agree-area .scrollbox{ border:1px solid #dddddd; overflow-x: hidden; ;overflow-y:auto;  height: 150px; width: 100%; margin: 15px 0; padding: 30px; font-size: 14px; line-height: 17px; color: #333; background:#fff;font-family:'NotoKrL',sans-serif;}
 
 
@@ -539,20 +569,35 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 /* popup */
 .popup{margin:0 auto; padding:30px; overflow-y:auto;overflow-x:hidden; width: 1000px   }
 /* popup - table-type4 */
+.popup input[type=text]{padding:10px }
 .popup .table-type4 input[type=text], .popup .table-type4 .select{width: 280px; }
 .popup .table-type4 .input-num .phoneNum{width: 82px !important;}
 .popup .table-type4 .input-email .emil{width: 185px !important;}
 .popup .table-type4 .input-email .emil2{width: 160px !important;}
-.popup .table-type4 input.wide{width: 750px !important;}
+.popup .table-type4 .wide{width: 750px !important;}
 .popup .table-type1 input[type=text], .popup .table-type4 .select{width: 273px; }
 .popup .table-type1 td{padding: 15px; color: #333}
 .popup .table-type2 td, .popup .table-type2 th{text-align: left; padding-left: 30px ; font-size: 16px; height: 60px;}
 .popup .text-hos{font-family: 'NotoKrR'; font-size: 30px; color: #000;font-weight: normal; text-align: center; margin-top: 30px; }
+
+/* 외래 교원 추천서 */
 .popup .sign{text-align: right;}
 .popup .sign table{width: 466px; display: inline-block; }
 .popup .sign th{ height: 60px; padding: 0 }
 .popup .sign:after{content:'';display:block;clear:both;}
 .popup .list-type1 li{font-size: 14px;margin-bottom: 12px;}
+
+
+/* 협력체결신청 */
+.popup input[type=text].today{text-align: right;}
+
+/* padding 좁게*/
+.popup .pdnone td{padding:10px !important}
+.popup .pdnone th{padding: 0 }
+
+
+/* 병원유형별 세부정보 */
+.popup2{padding:20px }
 
 
 
@@ -581,15 +626,26 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .marL10{margin-left: 10px !important}
 .marL15{margin-left: 15px !important}
 .marL20{margin-left: 20px !important}
+.marL30{margin-left: 30px !important}
 .padL15{padding-left: 15px !important}
 .padR0{padding-right: 0px !important}
+.wid50{width: 50px !important}
+.wid64{width: 64px !important}
+.wid70{width: 70px !important}
 .wid80{width: 80px !important}
+.wid85{width: 85px !important}
+.wid90{width: 90px !important}
+.wid100{width: 100px !important}
 .wid105{width: 105px !important}
+.wid120{width: 120px !important}
 .wid112{width: 112px !important}
 .wid145{width: 145px !important}
+.wid160{width: 160px !important}
+.wid180{width: 180px !important}
 .wid185{width: 185px !important}
 .wid200{width: 200px !important}
 .wid210{width: 210px !important}
+.wid240{width: 240px !important}
 .wid270{width: 270px !important}
 .wid395{width: 395px !important}
 .wid470{width: 470px !important}
@@ -671,10 +727,14 @@ ul.bxslider {  list-style: none;}
 .table-scroll thead th{border-top:0}
 .table-scroll .scroll{height: 650px; overflow-y:scroll; }
 
-.table-scroll.type1 td{padding:17px 10px ; word-break: break-all;line-height: 22px;}
-.table-scroll.type1 th{padding:17px 5px ;}
+.table-scroll.type1 td{padding:10px 10px ; word-break: break-all;line-height: 22px;}
+.table-scroll.type1 th{padding:10px 5px ;}
 .table-scroll.type1 tr{cursor: pointer;}
 .table-scroll.type1 tr.action td{background: #f8f8f8; color:#0770bb; font-family:'notoKrM',sans-serif; font-weight: normal; }
+.table-scroll.type1 .last{padding-right: 27px}
+.table-scroll.type1 input{padding:10px }
+
+
 
 
 /* 진료예약 */
