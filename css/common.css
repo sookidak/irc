@@ -382,6 +382,11 @@ ol.list-type1 > li:before{display: none}
 .table-type4 input.wide{width: 970px !important;}
 .table-type4 label{color: #333}
 .table-type4 .radio-text span{vertical-align: middle; display: inline-block; position: relative;top: -1px;}
+.table-type4 .radio-text span.line{border-left: 1px solid #eee; padding-left: 20px;}
+.table-type4 .radio:nth-child(n+2), .table-type4 .checkbox:nth-child(n+2){margin-left: 20px}
+.table-type4 .radio-sub{display: inline-block;}
+.table-type4 .radio-sub .radio:first-child{margin-left: 0px}
+.table-type4 .radio-sub .radio:nth-child(n+2){margin-left: 5px}
 
 /* 2차 종합병원 */
 .table-type4 .sub-table{padding:0 ;}
@@ -398,6 +403,12 @@ ol.list-type1 > li:before{display: none}
 .table-type4 .dept-list li input{float: right; width: 70px !important}
 .table-type4 .dept-list li:nth-child(n+4){margin-top: 10px}
 .table-type4 .dept-list li:nth-child(3n+1){width:220px ;padding-left: 0px}
+
+.table-type4 .radio-list li{float: left;width:390px ; text-align: right; height: 60px; padding-top: 15px; border-bottom: 1px solid #eee; padding-right: 20px}
+.table-type4 .radio-list li:nth-child(2n+2){padding-left: 30px; border-left: 1px solid #eee;}
+.table-type4 .radio-list li span{float: left;}
+
+
 
 
 
@@ -576,6 +587,7 @@ textarea{min-height: 100px; padding-top: 10px; }
 .popup .table-type4 .input-email .emil2{width: 160px !important;}
 .popup .table-type4 .wide{width: 750px !important;}
 .popup .table-type1 input[type=text], .popup .table-type4 .select{width: 273px; }
+.popup .table-type1 th.textL{padding-left: 30px}
 .popup .table-type1 td{padding: 15px; color: #333}
 .popup .table-type2 td, .popup .table-type2 th{text-align: left; padding-left: 30px ; font-size: 16px; height: 60px;}
 .popup .text-hos{font-family: 'NotoKrR'; font-size: 30px; color: #000;font-weight: normal; text-align: center; margin-top: 30px; }
