@@ -9,6 +9,16 @@ ol.list-type1 li ul li{padding-left:10px;}
 /* 컬러 */
 .color-style5{color:#cd0e0e}
 
+/* 그라데이션 원형박스 */
+.box-gra-round{display:inline-block;width:200px;height:200px;border-radius:200px;overflow:hidden;text-align:center;padding:3px;
+background: #0975b8;
+background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a6 100%);
+background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a6 100%);
+background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%); 
+}
+.box-gra-round div{background: #fff;display:block;width:100%;height:100%;border-radius:100%;}
+.box-gra-text{position:relative;top:50%;display:inline-block;vertical-align: middle;width:100%;text-align:center;font-size:18px;color:#333;line-height:24px;font-family: 'NotoKrR';transform: translateY(-50%)}
+
 /* select-width */
 .select.major2{width:150px;}
 
@@ -40,20 +50,19 @@ ol.list-type1 li ul li{padding-left:10px;}
 
 /* 교수직통 Hotline */
 .hotline-wrap{position:relative;border:1px solid #ddd;border-radius:4px;width:100%;height:300px;margin-top:30px;margin-bottom:30px;}
-.hotline-box1{display:inline-block;width:200px;height:200px;border-radius:200px;overflow:hidden;text-align:center;padding:3px;
-background: #0975b8; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #0975b8 0%, #1798a6 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #0975b8 0%,#1798a6 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-.hotline-box1 div{background: #fff;display:block;width:194px;height:194px;border-radius:194px;padding-top:74px;font-size:18px;color:#333;line-height:24px;font-family: 'NotoKrR'}
-.hotline-box1.first{position:absolute;right:50%;top:49px;margin-right:190px;}
-.hotline-box1.second{position:absolute;left:50%;top:49px;margin-left:190px;}
-.hotline-textbox.first{position:absolute;right:50%;top:80px;margin-right:-55px;color:#333;line-height: 24px;font-size:16px;}
-.hotline-textbox.second{position:absolute;left:50%;bottom:80px;margin-left:-90px;color:#333;line-height: 24px;font-size:16px;}
+.first-box{position:absolute;right:50%;top:49px;margin-right:190px;}
+.second-box{position:absolute;left:50%;top:49px;margin-left:190px;}
+.first-text{position:absolute;right:50%;top:80px;margin-right:-55px;color:#333;line-height: 24px;font-size:16px;}
+.second-text{position:absolute;left:50%;bottom:80px;margin-left:-90px;color:#333;line-height: 24px;font-size:16px;}
 .hotline-textbox:before{content:'';display:inline-block;width:64px;height:58px;background: url('../img/icon_hotline.png') no-repeat;}
-.hotline-textbox.first:before{float:right;margin-left:16px;}
-.hotline-textbox.second:before{background-position:0 -100px;float:left;margin-right:16px;}
+.hotline-textbox.first-text:before{float:right;margin-left:16px;}
+.hotline-textbox.second-text:before{background-position:0 -100px;float:left;margin-right:16px;}
+
+/* 협력의료기관 개요 및 협약체결 절차 */
+.process-wrap{margin-top:50px;}
+.process-wrap .box-gra-round{width:160px;height:160px;vertical-align: middle}
+.process-nextarr{display:inline-block;width:12px;height:20px;vertical-align: middle;margin:0 10px;}
+.process-nextarr:before{content:'';display:inline-block;width:12px;height:20px;background: url('../img/arr_processnext.png') 0 0 no-repeat}
 
 /* agree */
 .agree-area .title-style4 + .title-style5{margin-top:10px;}
@@ -72,7 +81,6 @@ background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%); /* W3C, IE10+, FF1
 .login-box .input-wrap .btn{position: absolute; top: 0; right: 0; width: 130px; height: 130px; font-size: 18px; }
 .login-box .btn-wrap{margin-top: 30px; }
 .login-box .btn-wrap .btn{width: 200px; height: 50px; letter-spacing:-0.08em;}
-    
 
 /* 회원가입쪽 타이틀 */
 .member-wrap .title-style2{text-align: center;}
@@ -145,8 +153,6 @@ background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%); /* W3C, IE10+, FF1
 .member-wrap .pw-find-input{width: 580px; height: 50px !important; display: block; margin:0 auto }
 
 
-
-
 /* error */
 .error-box{width: 980px; margin: 100px auto 50px; padding-bottom: 70px; border:1px solid #ddd; border-radius: 8px}
 .error-box .box-top-logo{background: url(../img/err_logo.png) no-repeat center 16px #ddd; height: 60px; border-radius: 6px 6px 0 0}
@@ -173,3 +179,4 @@ background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%); /* W3C, IE10+, FF1
 .error-box .err-banner .bow-ver{color: #777; font-size: 14px;}
 .error-box .err-banner .err-banner-btn{ display: inline-block; letter-spacing: -1px; line-height: 26px; background-color: #fff;width: 130px; height: 30px; border-radius: 30px; border:1px solid #aaa ;color: #777; font-size: 14px; margin-top:20px }
 .error-box .err-banner .err-banner-btn:hover, .error-box .err-banner .err-banner-btn:focus{background-color: #0770bb;border:1px solid #0770bb ; color: #fff;}
+
