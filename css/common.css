@@ -336,10 +336,10 @@ ol.list-type1 > li:before{display: none}
 
 
 /* table - table-type1 */
-.table.table-type1 tbody th{  border-top: 0;border-bottom: 1px solid #eee;  }
-.table.table-type1 tbody th:first-child{ border-right: 1px solid #eee; }
-.table.table-type1 thead tr:first-child th{border-top: 2px solid #bbb;}
-.table.table-type1 td,th{line-height: 20px; padding: 18px 20px; word-break: keep-all;}
+.table-type1 tbody th{  border-top: 0;border-bottom: 1px solid #eee;  }
+.table-type1 tbody th:first-child{ border-right: 1px solid #eee; }
+.table-type1 thead tr:first-child th{border-top: 2px solid #bbb;}
+.table-type1 td,th{line-height: 20px; padding: 18px 20px; word-break: keep-all;}
 
 
 /* table -  table-type2 */

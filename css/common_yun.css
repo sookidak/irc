@@ -6,8 +6,14 @@ ol.list-type1 li ul li{padding-left:10px;}
 .textC-tableall td{text-align:center;}
 .prg-title .text-style4{line-height:16px;}
 
+/* 버튼 컬러 */
+.btn.color08{background: #e3751c;}
+
 /* 컬러 */
 .color-style5{color:#cd0e0e}
+
+/* 보더 top none */
+.bdb-none{border-bottom:none !important;}
 
 /* 그라데이션 원형박스 */
 .box-gra-round{display:inline-block;width:200px;height:200px;border-radius:200px;overflow:hidden;text-align:center;padding:3px;
@@ -63,6 +69,57 @@ background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%);
 .process-wrap .box-gra-round{width:160px;height:160px;vertical-align: middle}
 .process-nextarr{display:inline-block;width:12px;height:20px;vertical-align: middle;margin:0 10px;}
 .process-nextarr:before{content:'';display:inline-block;width:12px;height:20px;background: url('../img/arr_processnext.png') 0 0 no-repeat}
+
+
+/* referral system  */
+/* referral system : 의뢰환자 결과조회 */
+.input-term input[type=text]{float:left;width:calc(50% - 10px) !important}
+.term-dash{float:left;display:inline-block;width:20px;text-align: center;line-height:40px}
+.lookup-top:after{content:'';display:block;clear:both;}
+.lookup-input{float:left;width:480px;}
+.lookup-input table td{padding-right:30px;}
+.lookup-input table input[type=text]{width:100%;}
+.lookup-select{float:right;width:680px;}
+.lookup-input .btn-wrap{margin-top:10px;}
+.lookup-input .btn-wrap .btn{width:calc(50% - 5px);margin-left:6px}
+.lookup-input .btn-wrap .btn:first-child{margin-left:0;}
+.lookup-text{margin-top:12px;}
+.lookup-text .list-type1 >li{font-size:14px;color:#777;line-height:1.3;}
+.lookup-text .list-type1 >li:before{content:'*';background: none;top:5px;}
+.lookup-select .table-scroll .scroll{height:280px}
+.lookup-result{border-top:1px solid #ddd;margin-top:45px;padding-top:30px;}
+.lookup-result .tablist-type2 a{min-width:118px;}
+.lookup-result .btn-wrap2 .btn{border:1px solid #aaa;border-radius:4px;background:#fff;color:#777;height:30px;font-size:14px}
+.result-title{font-size:20px;color:#000;font-family: 'NotoKrR';}
+.result-smalltext{margin-top:14px}
+.lookup-result .tab-wrap{margin-top:30px;}
+.result-table-wrap{margin-top:10px;}
+.result-table-wrap table th,.result-table-wrap table td{padding:18px 0;}
+.result-table-wrap table th.textL,.result-table-wrap table td.textL{padding: 18px 20px;}
+.result-table-wrap .table-type1 tr{cursor:pointer;}
+.result-table-wrap .table-type1 tr.active td,.result-table-wrap .table-type1 tr:hover td{background: #f8f8f8;color:#0770bb;font-family: 'NotoKrR';}
+.num-up{color:#cd0e0e}
+.num-up:after{content:'';display:inline-block;width:7px;height:14px;background: url('../img/arr_up.png') left top no-repeat;margin-left:5px;vertical-align:middle;}
+
+.num-down:after{content:'';display:inline-block;width:7px;height:14px;background: url('../img/arr_down.png') left top no-repeat;margin-left:5px;vertical-align:middle;}
+.tabpanel-sub.lookup .result-smalltext{font-size:14px;}
+
+/* referral system : 회송환자 결과조회 */
+.lookup-result.refer04 .tab-wrap a{width:calc(100% / 9);}
+
+/* referral system : 약어검색 */
+.pagesearch-input{margin-bottom:30px;}
+.pagesearch-input table td{padding:0 30px;}
+.pagesearch-input .btn-wrap .btn{width:235px;}
+.pagesearch-filter li{float:left;margin-right:5px;}
+.filter-btn{width:35px;height:35px;border:1px solid #dfdfdf;border-radius:100%;font-size:16px;color:#777;}
+.filter-btn.type2{width:57px;border-radius:35px}
+.filter-btn.active{background:#199da3;color:#fff;border-color:#199da3}
+.pagesearch-filter-wrap:after{content:'';display:block;clear:both;}
+.pagesearch-filter-wrap{margin-top:10px;margin-bottom:10px;}
+
+
+
 
 /* agree */
 .agree-area .title-style4 + .title-style5{margin-top:10px;}
