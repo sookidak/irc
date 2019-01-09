@@ -4,14 +4,14 @@
 <!-- container -->
 <section class="container" id="container">	
 	<div class="pagetitle-wrap">
-		<h1 class="title-style1">의뢰환자 결과조회</h1>
+		<h1 class="title-style1">회송환자 결과조회</h1>
 	</div>
 	<div class="contents">
 		<div class="lookup-top">
 			<div class="lookup-input">
 				<div class="table-wrap">
 					<table class="table table-type3">
-						<caption><span class="offscreen">의뢰환자 정보 입력 테이블</span></caption> 
+						<caption><span class="offscreen">회송환자 정보 입력 테이블</span></caption> 
 						<colgroup>
 							<col style="width:200px"/>
 							<col style=""/>
@@ -31,6 +31,14 @@
 								</th>
 								<td scope="row">
 									<input type="text" id="birth">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<label for="ennumber">등록번호</label>
+								</th>
+								<td scope="row">
+									<input type="text" id="ennumber">
 								</td>
 							</tr>
 							<tr>
@@ -55,8 +63,7 @@
 				</div>
 				<div class="lookup-text">
 					<ul class="list-type1">
-						<li>환자명을 클릭하면 전체 결과를, 수진이력을 클릭하면 해당일자의 결과를 조회할 수 있습니다.</li>
-						<li>3개월 이전 의뢰 환자는 이름이나 생년월일로 조회하시기 바랍니다.</li>
+						<li>6개월 이전 회송의뢰 환자는 이름, 생년월일, 등록번호로 조회하시기 바랍니다.</li>
 						<li>환자명이 ??? 로 조회될 경우 새로고침을 해주시기 바랍니다. </li>
 					</ul>
 				</div>
@@ -129,46 +136,43 @@
 				</div>
 			</div>
 		</div>
-		<div class="lookup-result">
+		<div class="lookup-result refer04">
 			<div class="result-title">001608862 현진영 800930(F/39)</div>
 			<div class="result-smalltext">상기 환자는 개인정보 공개를 원하지 않아 진료 정보를 조회할 수 없습니다.</div>
 			<div class="result-smalltext color-style1">* 진료의뢰일 기준. 3개월 동안의 검사결과를 제공합니다. 진단명은 회신서 Tab에서 확인할 수 있습니다.</div>
 			<!-- tab -->
 			<div class="tab-wrap">
 				<div role="tablist" class="tablist-type2">
-					<a id="lookup-anchor01" href="#lookup01" class="active" role="tab" aria-selected="true">수진이력</a>
-					<a id="lookup-anchor02" href="#lookup02" role="tab" aria-selected="false">환자예약정보</a>
-					<a id="lookup-anchor03" href="#lookup03" role="tab" aria-selected="false">진단검사</a>
-					<a id="lookup-anchor04" href="#lookup04" role="tab" aria-selected="false">판독결과</a>
-					<a id="lookup-anchor05" href="#lookup05" role="tab" aria-selected="false">심장검사</a>
-					<a id="lookup-anchor06" href="#lookup06" role="tab" aria-selected="false">안과검사</a>
-					<a id="lookup-anchor07" href="#lookup07" role="tab" aria-selected="false">수술</a>
-					<a id="lookup-anchor08" href="#lookup08" role="tab" aria-selected="false">투약</a>
-					<a id="lookup-anchor09" href="#lookup09" role="tab" aria-selected="false">퇴원요약</a>
-					<a id="lookup-anchor010" href="#lookup010" role="tab" aria-selected="false">회신서</a>
+					<a id="lookup-anchor01" href="#lookup01" class="active" role="tab" aria-selected="true">회송의뢰정보</a>
+					<a id="lookup-anchor02" href="#lookup02" role="tab" aria-selected="false">진단검사</a>
+					<a id="lookup-anchor03" href="#lookup03" role="tab" aria-selected="false">판독결과</a>
+					<a id="lookup-anchor04" href="#lookup04" role="tab" aria-selected="false">심장검사</a>
+					<a id="lookup-anchor05" href="#lookup05" role="tab" aria-selected="false">안과검사</a>
+					<a id="lookup-anchor06" href="#lookup06" role="tab" aria-selected="false">수술</a>
+					<a id="lookup-anchor07" href="#lookup07" role="tab" aria-selected="false">투약</a>
+					<a id="lookup-anchor08" href="#lookup08" role="tab" aria-selected="false">퇴원요약</a>
+					<a id="lookup-anchor09" href="#lookup09" role="tab" aria-selected="false">환송의뢰서</a>
 				</div>
-				<!-- 수진이력 -->
+				<!-- 회송의뢰정보 -->
 				<div id="lookup01" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor01" class="tabpanel-sub lookup active">
 					<div class="btn-wrap2">
 						<button type="button" class="btn">누적결과 보기</button>
 					</div>
 					<div class="result-table-wrap">
 						<table class="table table-type1">
-							<caption><span class="offscreen">수진이력 조회 결과 테이블</span></caption>
+							<caption><span class="offscreen">회송의뢰정보 조회 결과 테이블</span></caption>
 							<colgroup>
-								<col style="width:20%;">
-								<col style="width:20%;">
-								<col style="width:20%;">
-								<col style="width:20%;">
-								<col style="width:20%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
 							</colgroup>
 							<thead>
 								<tr>
-									<th scope="col">진료일자</th>
-									<th scope="col">진료과</th>
-									<th scope="col">진료의</th>
-									<th scope="col">유형</th>
-									<th scope="col">퇴원일</th>
+									<th scope="col">의로일자</th>
+									<th scope="col">의뢰과</th>
+									<th scope="col">의뢰의사</th>
+									<th scope="col">구분</th>
 								</tr>
 							</thead>
 							<tbody>	
@@ -177,78 +181,20 @@
 									<td>알레르기내과</td>
 									<td>김철우</td>
 									<td>외래</td>
-									<td></td>
 								</tr>
 								<tr>
 									<td>2018-11-25</td>
 									<td>알레르기내과</td>
 									<td>김철우</td>
 									<td>외래</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td>알레르기내과</td>
-									<td>김철우</td>
-									<td>외래</td>
-									<td></td>
 								</tr>
 							</tbody>	
 						</table>
 					</div>
 				</div>
-				<!-- //수진이력 -->
-				<!-- 환자예약정보 -->
-				<div id="lookup02" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor02" class="tabpanel-sub lookup">
-					<div class="result-table-wrap">
-						<table class="table table-type1 ">
-							<caption><span class="offscreen">환자예약정보 조회 결과 테이블</span></caption>
-							<colgroup>
-								<col style="width:20%;">
-								<col style="width:20%;">
-								<col style="width:20%;">
-								<col style="width:20%;">
-								<col style="width:20%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">진료일자</th>
-									<th scope="col">진료과</th>
-									<th scope="col">진료의</th>
-									<th scope="col">유형</th>
-									<th scope="col">퇴원일</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr class="active">
-									<td>2018-11-25</td>
-									<td>알레르기내과</td>
-									<td>김철우</td>
-									<td>외래</td>
-									<td></td>
-								</tr>
-								<tr >
-									<td>2018-11-25</td>
-									<td>알레르기내과</td>
-									<td>김철우</td>
-									<td>외래</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td>알레르기내과</td>
-									<td>김철우</td>
-									<td>외래</td>
-									<td></td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //환자예약정보 -->
+				<!-- //회송의뢰정보 -->
 				<!-- 진단검사 -->
-				<div id="lookup03" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor03" class="tabpanel-sub lookup">
+				<div id="lookup02" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor02" class="tabpanel-sub lookup">
 					<div class="btn-wrap2">
 						<button type="button" class="btn">누적결과 보기</button>
 					</div>
@@ -305,7 +251,7 @@
 				</div>
 				<!-- //진단검사 -->
 				<!-- 판독결과 -->
-				<div id="lookup04" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor04" class="tabpanel-sub lookup">
+				<div id="lookup03" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor03" class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">판독결과 조회 테이블</span></caption>
@@ -343,7 +289,7 @@
 				</div>
 				<!-- //판독결과 -->
 				<!-- 심장검사 -->
-				<div id="lookup05" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor05" class="tabpanel-sub lookup">
+				<div id="lookup04" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor04" class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">심장검사 조회 테이블</span></caption>
@@ -377,7 +323,7 @@
 				</div>
 				<!-- //심장검사 -->
 				<!-- 안과검사 -->
-				<div id="lookup06" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor06" class="tabpanel-sub lookup">
+				<div id="lookup05" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor05" class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">안과검사 조회 테이블</span></caption>
@@ -473,7 +419,7 @@
 				</div>
 				<!-- //안과검사 -->
 				<!-- 수술 -->
-				<div id="lookup07" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor07" class="tabpanel-sub lookup">
+				<div id="lookup06" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor06" class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">수술 조회 테이블</span></caption>
@@ -515,7 +461,7 @@
 				</div>
 				<!-- //수술 -->
 				<!-- 투약 -->
-				<div id="lookup08" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor08" class="tabpanel-sub lookup">
+				<div id="lookup07" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor07" class="tabpanel-sub lookup">
 					<div><span class="result-smalltext color-style1">* 약품명을 클릭 하면 약품정보를 조회할 수 있습니다.</span></div>
 					<div class="result-table-wrap">
 						<table class="table table-type1">
@@ -562,7 +508,7 @@
 				</div>
 				<!-- //투약 -->
 				<!-- 퇴원요약 -->
-				<div id="lookup09" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor09" class="tabpanel-sub lookup">
+				<div id="lookup08" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor08" class="tabpanel-sub lookup">
 					<div><span class="result-smalltext color-style1">* 항목을 클릭 하면 퇴원요약 내용을 확인할 수 있습니다.</span></div>
 					<div class="result-table-wrap">
 						<table class="table table-type1">
@@ -613,7 +559,7 @@
 				</div>
 				<!-- //퇴원요약 -->
 				<!-- 회신서 -->
-				<div id="lookup010" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor010" class="tabpanel-sub lookup">
+				<div id="lookup09" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor09" class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type2">
 							<caption><span class="offscreen">회신서 조회 테이블</span></caption>
@@ -679,7 +625,7 @@ consistent with fibrocystic change
 										</xmp>
 									</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>

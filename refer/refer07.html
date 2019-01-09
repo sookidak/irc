@@ -1,0 +1,132 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">	
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">약어검색</h1>
+	</div>
+	<div class="contents">
+		<!-- search-input -->
+		<div class="pagesearch-input">
+			<div class="searchtable-wrap">
+				<table class="table table-type3">
+					<caption><span class="offscreen">약어 검색어 입력 테이블</span></caption> 
+					<colgroup>
+						<col style="width:200px"/>
+						<col style=""/>
+						<col style="width:200px"/>
+						<col style=""/>
+					</colgroup>
+					<tbody>
+						<tr> 
+							<th>
+								<label for="abb">약어</label>
+							</th>
+							<td colspan="3">
+								<input type="text" id="abb" maxlength="10" title="아이디입력"/>
+							</td>
+						</tr>
+						<tr>
+							<th class="bdb-none">
+								<label for="ename">영문명</label>
+							</th>
+							<td class="bdb-none">
+								<input type="text" id="ename" maxlength="10" title="아이디입력"/>
+							</td>
+							<th class="bdb-none">
+								<label for="kname">한글명</label>
+							</th>
+							<td class="bdb-none">
+								<input type="text" id="kname" maxlength="10" title="아이디입력"/>
+							</td>
+						</tr>
+						<tr>
+							<td  colspan="4" class="bdt-none">
+								<div class="pagesearch-filter-wrap">
+									<ul class="pagesearch-filter">
+										<!-- 선택되었을때 버튼에 active 클래스 추가 -->
+										<li><button type="button" class="filter-btn active">A</button></li>
+										<li><button type="button" class="filter-btn">B</button></li>
+										<li><button type="button" class="filter-btn">C</button></li>
+										<li><button type="button" class="filter-btn">D</button></li>
+										<li><button type="button" class="filter-btn">E</button></li>
+										<li><button type="button" class="filter-btn">F</button></li>
+										<li><button type="button" class="filter-btn">G</button></li>
+										<li><button type="button" class="filter-btn">H</button></li>
+										<li><button type="button" class="filter-btn">I</button></li>
+										<li><button type="button" class="filter-btn">J</button></li>
+										<li><button type="button" class="filter-btn">K</button></li>
+										<li><button type="button" class="filter-btn">L</button></li>
+										<li><button type="button" class="filter-btn">M</button></li>
+										<li><button type="button" class="filter-btn">N</button></li>
+										<li><button type="button" class="filter-btn">O</button></li>
+										<li><button type="button" class="filter-btn">P</button></li>
+										<li><button type="button" class="filter-btn">Q</button></li>
+										<li><button type="button" class="filter-btn">R</button></li>
+										<li><button type="button" class="filter-btn">S</button></li>
+										<li><button type="button" class="filter-btn">T</button></li>
+										<li><button type="button" class="filter-btn">U</button></li>
+										<li><button type="button" class="filter-btn">V</button></li>
+										<li><button type="button" class="filter-btn">W</button></li>
+										<li><button type="button" class="filter-btn">X</button></li>
+										<li><button type="button" class="filter-btn">Y</button></li>
+										<li><button type="button" class="filter-btn">Z</button></li>
+									</ul>
+								</div>
+								<div class="pagesearch-filter-wrap">
+									<ul class="pagesearch-filter">
+										<li><button type="button" class="filter-btn type2">전체</button></li>
+										<li><button type="button" class="filter-btn type2">기타</button></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-wrap marT10">
+				<button type="button" class="btn btn-m color01">검색</button>
+				<button type="button" class="btn btn-m color03 ">초기화</button>	
+			</div>
+		</div>
+		<!-- //search-input -->
+		<!-- search-result -->
+		<div class="pagesearch-result">
+			<div class="searchtable-wrap">
+				<table class="table table-type1">
+					<caption><span class="offscreen">약어검색 결과 테이블</span></caption>
+					<colgroup>
+						<col style="width:7%"/>
+						<col style="width:10%"/>
+						<col style="width:36%"/>
+						<col style="width:37%;"/>
+						<col style="width:10%"/>
+					</colgroup>
+					<thead>
+						<tr> 
+							<th scope="col">순번</th>
+							<th scope="col">약어</th>
+							<th scope="col">영문명</th>
+							<th scope="col">한글명</th>
+							<th scope="col">출처</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">1</td>
+							<td class="textL">ASA Ⅳ</td>
+							<td class="textL">A patient with incapacitating systemic disease</td>  
+							<td class="textL">능력상실 전신성 질환을 동반한 환자</td> 
+							<td>KMRA</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //search-result -->
+		
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

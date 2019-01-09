@@ -2,637 +2,176 @@
 @@include('../inc/header.html')
 @@include('../inc/location.html')
 <!-- container -->
-<section class="container" id="container">	
+<section class="container" id="container">
 	<div class="pagetitle-wrap">
-		<h1 class="title-style1">회송환자 결과조회</h1>
+		<h1 class="title-style1">진료의뢰예약 현황</h1>
 	</div>
 	<div class="contents">
-		<div class="lookup-top">
-			<div class="lookup-input">
-				<div class="table-wrap">
-					<table class="table table-type3">
-						<caption><span class="offscreen">회송환자 정보 입력 테이블</span></caption> 
-						<colgroup>
-							<col style="width:200px"/>
-							<col style=""/>
-						</colgroup>
-						<tbody>
-							<tr>
-								<th scope="row">
-									<label for="name">이름</label>
-								</th>
-								<td>
-									<input type="text" id="name">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<label for="birth">생년월일</label>
-								</th>
-								<td scope="row">
-									<input type="text" id="birth">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<label for="ennumber">등록번호</label>
-								</th>
-								<td scope="row">
-									<input type="text" id="ennumber">
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">
-									<label for="term">조회기간</label>
-								</th>
-								<td>
-									<div class="input-term">
-										<input type="text" id="term">
-										<span class="term-dash">~</span>
-										<label for="term1" class="offscreen">조회기간 끝날짜</label>
-										<input type="text" id="term1">
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+		<!-- 검색박스 -->
+		<div class="search-box2">
+			<label>기간<input type="text" id="" class="wid185" title="병원명을 입력하세요" />
+			<span class="dash">-</span>
+			<input type="text" class="wid185" id="" title="병원명을 입력하세요" /></label>
+			<button type="" class="btn-sheah">검색</button>
+			<label>예약상태
+				<div class="select wid470"> 
+					<label for="selector1">전체</label> 
+					<select id="selector1" class="" aria-haspopup="true" aria-controls="select-menu" title="병원유형을 선택하세요" >    
+						<option lang="ko" value="1" role="menuitem">선택지1</option>
+						<option lang="ko" value="2" role="menuitem">선택지2</option>
+					</select>	
 				</div>
-				<div class="btn-wrap">
-					<button type="button" class="btn btn-m color01 ">검색</button>
-					<button type="button" class="btn btn-m color03 ">초기화</button>
-				</div>
-				<div class="lookup-text">
-					<ul class="list-type1">
-						<li>6개월 이전 회송의뢰 환자는 이름, 생년월일, 등록번호로 조회하시기 바랍니다.</li>
-						<li>환자명이 ??? 로 조회될 경우 새로고침을 해주시기 바랍니다. </li>
-					</ul>
-				</div>
-			</div>
-			<div class="lookup-select">
-				<div class="table-scroll marT15 type1">			
-					<!-- 보여지는 표 상단 -->
-					<table class="table thead">
-						<caption><span class="offscreen">환자 리스트 테이블</span></caption>
-						<colgroup>	    
-							<col style="width:170px">
-							<col style="width:170px">
-							<col style="">
-							<col style="width:187px;"> 
-						</colgroup>	  
-						<thead>	
-							<tr>
-								<th scope="col">진료의뢰일</th>
-								<th scope="col">등록번호</th>
-								<th scope="col">이름</th>
-								<th scope="col" class="last">생년월일(S/A)</th>
-							</tr>
-						</thead>
-					</table>			
-					<!-- //보여지는 표 상단 -->
-					<!-- 스크롤 되는 표  -->
-					<div class="scroll">
-						<table class="table tbody" summary="스크롤이 적용되는 테이블">	  
-							<caption><span class="offscreen">환자리스트 테이블</span></caption>
-							<colgroup>
-								<col style="width:170px">
-								<col style="width:170px">
-								<col style="">
-								<col style="width:170px;"> 
-							</colgroup>	  	  
-							<!-- 숨겨지는 표 상단 -->
-							<thead class="ir">
-								<tr>
-									<th scope="col">번호</th>
-									<th scope="col">신청일</th>
-									<th scope="col">병원명</th>
-									<th  scope="col" class="last">협력체결일</th>
-								</tr>
-							</thead>
-							<!-- //숨겨지는 표 상단 -->
-							<tbody>
-								<tr>
-									<td>2018-11-26</td>
-									<td>01023341234</td>
-									<td>강성민</td>
-									<td>580305(F/61)</td>
-								</tr>
-								<!-- 선택된 병원 class action 추가 및 input 적용 -->
-								<tr class="action">
-									<td>2018-11-26</td>
-									<td>01023341234</td>
-									<td>강성민</td>
-									<td>580305(F/61)</td>
-								</tr>
-								<tr>
-									<td>2018-11-26</td>
-									<td>01023341234</td>
-									<td>강성민</td>
-									<td>580305(F/61)</td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>			
-					<!-- //스크롤 되는 표  -->
-				</div>
-			</div>
+			</label>	
 		</div>
-		<div class="lookup-result refer04">
-			<div class="result-title">001608862 현진영 800930(F/39)</div>
-			<div class="result-smalltext">상기 환자는 개인정보 공개를 원하지 않아 진료 정보를 조회할 수 없습니다.</div>
-			<div class="result-smalltext color-style1">* 진료의뢰일 기준. 3개월 동안의 검사결과를 제공합니다. 진단명은 회신서 Tab에서 확인할 수 있습니다.</div>
-			<!-- tab -->
-			<div class="tab-wrap">
-				<div role="tablist" class="tablist-type2">
-					<a id="lookup-anchor01" href="#lookup01" class="active" role="tab" aria-selected="true">회송의뢰정보</a>
-					<a id="lookup-anchor02" href="#lookup02" role="tab" aria-selected="false">진단검사</a>
-					<a id="lookup-anchor03" href="#lookup03" role="tab" aria-selected="false">판독결과</a>
-					<a id="lookup-anchor04" href="#lookup04" role="tab" aria-selected="false">심장검사</a>
-					<a id="lookup-anchor05" href="#lookup05" role="tab" aria-selected="false">안과검사</a>
-					<a id="lookup-anchor06" href="#lookup06" role="tab" aria-selected="false">수술</a>
-					<a id="lookup-anchor07" href="#lookup07" role="tab" aria-selected="false">투약</a>
-					<a id="lookup-anchor08" href="#lookup08" role="tab" aria-selected="false">퇴원요약</a>
-					<a id="lookup-anchor09" href="#lookup09" role="tab" aria-selected="false">환송의뢰서</a>
-				</div>
-				<!-- 회송의뢰정보 -->
-				<div id="lookup01" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor01" class="tabpanel-sub lookup active">
-					<div class="btn-wrap2">
-						<button type="button" class="btn">누적결과 보기</button>
-					</div>
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">회송의뢰정보 조회 결과 테이블</span></caption>
-							<colgroup>
-								<col style="width:25%;">
-								<col style="width:25%;">
-								<col style="width:25%;">
-								<col style="width:25%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">의로일자</th>
-									<th scope="col">의뢰과</th>
-									<th scope="col">의뢰의사</th>
-									<th scope="col">구분</th>
-								</tr>
-							</thead>
-							<tbody>	
-								<tr>
-									<td>2018-11-25</td>
-									<td>알레르기내과</td>
-									<td>김철우</td>
-									<td>외래</td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td>알레르기내과</td>
-									<td>김철우</td>
-									<td>외래</td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //회송의뢰정보 -->
-				<!-- 진단검사 -->
-				<div id="lookup02" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor02" class="tabpanel-sub lookup">
-					<div class="btn-wrap2">
-						<button type="button" class="btn">누적결과 보기</button>
-					</div>
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">진단검사 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:17%;">
-								<col style="width:17%;">
-								<col style="width:17%;">
-								<col style="width:17%;">
-								<col style="width:16%;">
-								<col style="width:16%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">검사시행일</th>
-									<th scope="col">검사항목</th>
-									<th scope="col">검사명</th>
-									<th scope="col">결과</th>
-									<th scope="col">정상범위</th>
-									<th scope="col">단위</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr class="active">
-									<td>2018-11-25</td>
-									<td>HbAlc</td>
-									<td>HbAlc</td>
-									<td><span class="num-up">6.2</span></td>
-									<td>(4.0 - 6.0)</td>
-									<td>%</td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td>HbAlc</td>
-									<td>HbAlc</td>
-									<td><span class="num-down">6.2</span></td>
-									<td>(4.0 - 6.0)</td>
-									<td>%</td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td>HbAlc</td>
-									<td>HbAlc</td>
-									<td>6.2</td>
-									<td>(4.0 - 6.0)</td>
-									<td>mg/dl</td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //진단검사 -->
-				<!-- 판독결과 -->
-				<div id="lookup03" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor03" class="tabpanel-sub lookup">
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">판독결과 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:17%;">
-								<col style="width:;">
-								<col style="width:17%;">
-								<col style="width:17%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">검사시행일</th>
-									<th scope="col">검사명</th>
-									<th scope="col">이미지보기</th>
-									<th scope="col">판독유무</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
-									<td>2018-11-25</td>
-									<td class="textL">OCT(diddks,Macula+Disc)</td>
-									<td><a href="#link" class="active-type1">보기</a></td>
-									<td>판독중</td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td class="textL">OCT(diddks,Macula+Disc)</td>
-									<td><a href="#link" class="active-type1">보기</a></td>
-									<td><a href="#link" class="active-type1">판독완료</a></td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //판독결과 -->
-				<!-- 심장검사 -->
-				<div id="lookup04" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor04" class="tabpanel-sub lookup">
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">심장검사 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:17%;">
-								<col style="width:;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">검사시행일</th>
-									<th scope="col">검사명</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
-									<td>2018-11-25</td>
-									<td class="textL"></td>
-								</tr>
-								<tr>
-									<td>2018-11-25</td>
-									<td class="textL">OCT(diddks,Macula+Disc)</td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-					<div class="btn-wrap textR marT30">
-						<button type="button" class="btn btn-m color01">심장정밀검사 Cardiac Report</button>
-						<button type="button" class="btn btn-m color08">심전도검사 Muse</button>
-					</div>
-				</div>
-				<!-- //심장검사 -->
-				<!-- 안과검사 -->
-				<div id="lookup05" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor05" class="tabpanel-sub lookup">
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">안과검사 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-								<col style="width:;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th rowspan="2" scope="col">번호</th>
-									<th rowspan="2" scope="col">검사일</th>
-									<th rowspan="2" scope="col">검사시간</th>
-									<th colspan="3" scope="col">Autorefraction<Br>(sph/syl/Ax)
-									</th>
-									<th colspan="6" scope="col">Keratometry(D/A)</th>
-									<th colspan="2" scope="col">NCT</th>
-									<th colspan="3" scope="col">MR<Br>(sph/cyl/Ax/VAcc)</th>
-									<th colspan="2" scope="col">CRMR (sph/cyl/Ax/VAcc)</th>
-									<th colspan="3" scope="col">WG(sph/syl/Ax)</th>
-								</tr>
-								<tr>
-									<th scope="col">OD</th>
-									<th scope="col">OS</th>
-									<th scope="col">PD</th>
-									<th scope="col">OD<Br>(H)</th>
-									<th scope="col">OD<Br>(V)</th>
-									<th scope="col">OS<Br>(H)</th>
-									<th scope="col">OS<Br>(V)</th>
-									<th scope="col">OD<Br>(Cyl)</th>
-									<th scope="col">OS<Br>(Cyl)</th>
-									<th scope="col">OD</th>
-									<th scope="col">OS</th>
-									<th scope="col">OD</th>
-									<th scope="col">OS</th>
-									<th scope="col">Add</th>
-									<th scope="col">OD</th>
-									<th scope="col">OS</th>
-									<th scope="col">OD</th>
-									<th scope="col">OS</th>
-									<th scope="col">Add</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr>
-									<td scope="row">1</td>
-									<td>2018-11-19</td>
-									<td>08:40</td>
-									<td>+0.50/<br>-1.25/11</td>
-									<td>+0.50/<br>-0.50/5</td>
-									<td>63.0</td>
-									<td>44.50/1</td>
-									<td>43.50/10</td>
-									<td>44.75/13</td>
-									<td>44.00/4</td>
-									<td>-1.00</td>
-									<td>-0.75</td>
-									<td>13</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //안과검사 -->
-				<!-- 수술 -->
-				<div id="lookup06" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor06" class="tabpanel-sub lookup">
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">수술 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:8%;">
-								<col style="width:7%;">
-								<col style="width:7%;">
-								<col style="width:39%;">
-								<col style="width:39%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">수술일</th>
-									<th scope="col">진료과</th>
-									<th scope="col">수술의</th>
-									<th scope="col">진단명</th>
-									<th scope="col">수술명</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
-									<td>2018-11-25</td>
-									<td>CS</td>
-									<td>김영삼</td>
-									<td class="textL">Pneumothorax due to postprocedure (RT)<br>Lung cancer, Right (Rt)</td>
-									<td class="textL">Closed thoracostomy</td>
-								</tr>
-								<tr >
-									<td>2018-11-25</td>
-									<td>CS</td>
-									<td>김영삼</td>
-									<td class="textL">Pneumothorax due to postprocedure (RT)<br>Lung cancer, Right (Rt)</td>
-									<td class="textL">Closed thoracostomy</td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //수술 -->
-				<!-- 투약 -->
-				<div id="lookup07" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor07" class="tabpanel-sub lookup">
-					<div><span class="result-smalltext color-style1">* 약품명을 클릭 하면 약품정보를 조회할 수 있습니다.</span></div>
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">투약 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:8%;">
-								<col style="width:7%;">
-								<col style="width:7%;">
-								<col style="width:;">
-								<col style="width:10%;">
-								<col style="width:18%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">처방일</th>
-									<th scope="col">진료과</th>
-									<th scope="col">구분</th>
-									<th scope="col">Medication</th>
-									<th scope="col">처방일수</th>
-									<th scope="col">용법</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
-									<td>2018-11-25</td>
-									<td>ID</td>
-									<td>외래</td>
-									<td class="textL"><a href="#link" class="active-type1">Rifampin 600 mg/tab</a></td>
-									<td>14d</td>
-									<td>자기전 복용</td>
-								</tr>
-								<tr >
-									<td>2018-11-25</td>
-									<td>ID</td>
-									<td>외래</td>
-									<td class="textL"><a href="#link" class="active-type1">Rifampin 600 mg/tab</a></td>
-									<td>14d</td>
-									<td>자기전 복용</td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //투약 -->
-				<!-- 퇴원요약 -->
-				<div id="lookup08" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor08" class="tabpanel-sub lookup">
-					<div><span class="result-smalltext color-style1">* 항목을 클릭 하면 퇴원요약 내용을 확인할 수 있습니다.</span></div>
-					<div class="result-table-wrap">
-						<table class="table table-type1">
-							<caption><span class="offscreen">퇴원요약 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:8%;">
-								<col style="width:7%;">
-								<col style="width:7%;">
-								<col style="width:;">
-								<col style="width:10%;">
-								<col style="width:18%;">
-								<col style="width:18%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">번호</th>
-									<th scope="col">진료과</th>
-									<th scope="col">진료의</th>
-									<th scope="col">입원일</th>
-									<th scope="col">퇴원일</th>
-									<th scope="col">제원일수</th>
-									<th scope="col">퇴원요약</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
-									<td>1</td>
-									<td>CM</td>
-									<td>이흥렬</td>
-									<td>2018-11-19</td>
-									<td></td>
-									<td>8</td>
-									<td>재원중</td>
-								</tr>
-								<tr >
-									<td>2</td>
-									<td>CM</td>
-									<td>이흥렬</td>
-									<td>2018-11-19</td>
-									<td>2018-11-23</td>
-									<td>8</td>
-									<td><a href="#link" class="active-type1">보기</a></td>
-								</tr>
-							</tbody>	
-						</table>
-					</div>
-				</div>
-				<!-- //퇴원요약 -->
-				<!-- 회신서 -->
-				<div id="lookup09" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor09" class="tabpanel-sub lookup">
-					<div class="result-table-wrap">
-						<table class="table table-type2">
-							<caption><span class="offscreen">회신서 조회 테이블</span></caption>
-							<colgroup>
-								<col style="width:20%;">
-								<col style="width:;">
-								<col style="width:20%;">
-								<col style="width:;">
-							</colgroup>
-							<tbody>
-								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
-									<th scope="row" class="textL">환자명</th>
-									<td class="textL">이철호(M/77)</td>
-									<th scope="row" class="textL">진료과/진료의</th>
-									<td class="textL">호흡기내과/이흥렬</td>
-								</tr>
-								<tr >
-									<th scope="row" class="textL">진료기간</th>
-									<td class="textL">2018.11.19~</td>
-									<th scope="row" class="textL">작성일</th>
-									<td class="textL"></td>
-								</tr>
-								<tr >
-									<th scope="row" class="textL">진료기간</th>
-									<td colspan="3" class="textL">Breast mass</td>
-								</tr>
-								<tr>
-									<td colspan="4" class="textL">
-										<xmp>
-2014-11-05
-[CC] Lt Breast mass for 3M
-LNMP : 10월
-1 kid; breast feeding
-no med, op
-
-[PE] Lt 2H 4cm, L/N(-)
-[PLAN] Biopsy
-
-U/S;
-Growing, palpable mass in left breast for 3 months
-
-Left breast;
-1. microlobulated oval heterogeneus mass at left 1H, 5cm D,
-3.99x2. 19x2. 86cm with hypervascularity
-2. irregular mass at left 2H, 1cm D, 0.81x0.45x0.884cm and at left 1H, 4cm D, 0.35cm : probably multifocal lesions
-3. oval mass at left 12H, 4cm D, 0.87x0.546x1.2cm : probably benign
-4. small cysts
-
-Right breast;
-1. two oval masses at right 11H, 3cm D (0.52x0.36x0.49cm) and right 11H, 4cm D (0.448cm)
-2.circumscribed round mass at right 10H, 5cm D, 0.91x0.73x0.81cm
-3. small cysts
-
-Breast, left, core biopsy;
-Benign ductal and stromal proliferative lesion, 
-consistent with fibrocystic change
-
-상기 소견으로 Excision 예정입니다.
-감사합니다.
-
-김세중 배상
-										</xmp>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<!-- //회신서 -->
+		<!-- //검색박스 -->
+		<!-- 버튼박스 -->
+		<div class="btn-wrap marT30">
+			<div class="left-sec color-style1">* 리스트를 선택하여 수정 후 엔터를 치거나 다른 곳으로 포커스 이동시 자동 저장됩니다.</div>
+			<div class="floatR">
+				<button type="button" class="btn btn-m color02">의뢰서 보기</button>
+				<button type="button" class="btn btn-m color02">의뢰서 출력</button>
+				<button type="button" class="btn btn-m color07">의뢰서양식 다운</button>
 			</div>
-			<!-- //tab -->
+		</div>	
+		<!-- //버튼박스 -->
+		<!-- 스크롤 테이블 -->
+		<div class="table-scroll marT15 type1">			
+			<!-- 보여지는 표 상단 -->
+			<table class="table thead">	  
+				<colgroup>	    
+					<col style="width:40px"/>
+					<col style="width:130px"/>	    
+					<col style="width:80px"/>
+					<col style="width:74px"/>
+					<col style="width:80px"/> 					
+					<col style="width:60px"/> 					
+					<col style="width:110px"/> 					
+					<col style="width:110px">					
+					<col style=""/> 					
+					<col style="width:120px"/> 					
+					<col style="width:90px"/> 					
+					<col style="width:90px"/> 						
+					<col style="width:112px"/> 
+				</colgroup>
+				<thead>	
+					<tr>
+						<th>번호</th>
+						<th>진료신청일</th>
+						<th>등록번호</th>
+						<th>환자이름</th>
+						<th>생년월일</th>
+						<th>성별</th>
+						<th>연락처</th>
+						<th>연락처2</th>
+						<th>경로</th>
+						<th>진료예약<br>일시</th>
+						<th>진료과</th>
+						<th>진료의사</th>
+						<th>상태</th>
+					</tr>
+				</thead>
+			</table>			
+			<!-- //보여지는 표 상단 -->
+			<!-- 스크롤 되는 표  -->
+			<div class="scroll">
+				<table class="table tbody pdnone" summary="스크롤이 적용되는 테이블">
+					<caption><span class="offscreen">진료의뢰예약 현황 테이블</span></caption>	  
+					<colgroup>	    
+						<col style="width:40px"/>							
+						<col style="width:130px"/>	    
+						<col style="width:80px"/> 							
+						<col style="width:74px"/> 					
+						<col style="width:80px"/> 					
+						<col style="width:60px"/> 					
+						<col style="width:110px"/> 					
+						<col style="width:110px">					
+						<col style=""/> 					
+						<col style="width:120px"/> 					
+						<col style="width:90px"/> 					
+						<col style="width:90px"/> 						
+						<col style="width:97px"/> 
+					</colgroup>
+					<!-- 숨겨지는 표 상단 -->
+					<thead class="ir">	
+						<tr>
+							<th>번호</th>
+							<th>진료신청일</th>
+							<th>등록번호</th>
+							<th>환자이름</th>
+							<th>생년월일</th>
+							<th>성별</th>
+							<th>연락처</th>
+							<th>연락처2</th>
+							<th>경로</th>
+							<th>진료예약<br>일시</th>
+							<th>진료과</th>
+							<th>진료의사</th>
+							<th>상태</th>
+						</tr>
+					</thead>
+					<!-- //숨겨지는 표 상단 -->
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>2018-01-03 10:37</td>
+							<td>00000</td>
+							<td>나정선</td>
+							<td>19800513</td>
+							<td>여</td>
+							<td>010-1234-1234</td>
+							<td>010-1234-1234</td>
+							<td>외래</td>
+							<td>2018-01-13</td>
+							<td>신경과</td>
+							<td>배은기</td>
+							<td>완료</td>
+						</tr>
+						<!-- 선택된 정보에 class  action추가  -->
+						<tr class="action">
+							<td>2</td>
+							<td>2018-01-03 10:37</td>
+							<td><input type="text" value="00000" ></td>
+							<td>나정선</td>
+							<td>19800513</td>
+							<td>여</td>
+							<td>010-1234-1234</td>
+							<td>010-1234-1234</td>
+							<td>외래경유<br>입원</td>
+							<td><input type="text" value="2018-01-01" ></td>
+							<td><input type="text" value="소화기" ></td>
+							<td><input type="text" value="김형길" ></td>
+							<td>
+								<div class="select wid70 small"> 
+									<label for="div-a">완료</label> 
+									<select id="div-a" class="" aria-haspopup="true" aria-controls="select-menu" title="구분을 선택하세요">    
+										<option value="1" role="menuitem">신규</option>
+										<option value="2" role="menuitem">보류</option>
+										<option value="3" role="menuitem">완료</option>
+									</select>	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2018-01-03 10:37</td>
+							<td>00000</td>
+							<td>노랑둘리</td>
+							<td>19800513</td>
+							<td>남</td>
+							<td>00-1234-1234</td>
+							<td>010-1234-1234</td>
+							<td>외래</td>
+							<td>2018-01-13</td>
+							<td>신경과</td>
+							<td>배은기</td>
+							<td>오류</td>
+						</tr>
+					</tbody>	
+				</table>
+			</div>			
+			<!-- //스크롤 되는 표  -->
 		</div>
+		<!-- //스크롤 테이블 -->
 	</div>
 </section>
 <!-- //container -->
