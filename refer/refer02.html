@@ -1,0 +1,75 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">	
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">회송환자 결과조회</h1>
+	</div>
+	<div class="contents">
+		<!-- tab -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type1">
+				<a id="tab01" href="#tab01-tabpanel" class="active" role="tab" aria-selected="true">진단검사</a>
+				<a id="tab02" href="#tab02-tabpanel" role="tab" aria-selected="false">판독검사</a>
+				<a id="tab03" href="#tab03-tabpanel" role="tab" aria-selected="false">심장검사</a>
+				<a id="tab04" href="#tab04-tabpanel" role="tab" aria-selected="false">안과검사</a>
+				<a id="tab05" href="#tab05-tabpanel" role="tab" aria-selected="false">수술</a>
+				<a id="tab06" href="#tab06-tabpanel" role="tab" aria-selected="false">투약</a>
+				<a id="tab07" href="#tab07-tabpanel" role="tab" aria-selected="false">퇴원요약</a>
+				<a id="tab08" href="#tab08-tabpanel" role="tab" aria-selected="false">회송의뢰서</a>
+			</div>
+			<div id="tab01-tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab01-anchor" class="tabpanel active">
+				<div class="refer-toptext">* 최초 의뢰일 기준 이후의 검사결과를 최근 일자별로 조회 가능합니다. 특정 검사의 누적검사결과를 한 화면에서 확인할 수도 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour21.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab02-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab02-anchor">
+				<div class="refer-toptext">* 영상검사, 병리과검사 및 각 진료과에서 시행하는 장비검사 결과를 조회 할 수 있고, [이미지보기]에 '보기'가 있는 검사는 PACS 혹은 해당 이미지를 직접 조회할 수도 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour22.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab03-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab03-anchor">
+				<div class="refer-toptext">* Cardiac Refoet(심장정밀검사)와 Muse(심전도)를 클릭하시면 각각의 결과를 조회 할 수 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour23.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab04-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab04-anchor">
+				<div class="refer-toptext">* 안과 진료과 자체에서 시행하는 Autorefraction, Keratometry, NCT, MR 결과를 조회 할 수 있습니다. </div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour24.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab05-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab05-anchor">
+				<div class="refer-toptext">* 의뢰환자의 수술 내역을 확인할 수 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour25.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab06-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab06-anchor">
+				<div class="refer-toptext">* 최초 의뢰일 이후 본원에서 처방한 경구약, 주사약을 조회 할 수 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour26.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab07-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab07-anchor">
+				<div class="refer-toptext">* 의뢰환자의 입원 내역에 대한 퇴원요약을 조회 할 수 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour27.jpg" alt="">
+				</div>
+			</div>
+			<div id="tab08-tabpanel" class="tabpanel" tabindex="0" role="tabpanel" aria-labelledby="tab08-anchor">
+				<div class="refer-toptext">* 작성되어 발송된 전원의뢰서의 내용을 재확인 할 수 있습니다.</div>
+				<div class="tour-wrap">
+					<img src="../img/img_tour28.jpg" alt="">
+				</div>	
+			</div>
+		</div>
+		<!-- tab -->
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
