@@ -18,13 +18,13 @@
 			</colgroup>	  
 			<tbody>	    
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="name">이름<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
 						<input type="text" id="name" maxlength="20" title="이름 입력"/>
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="birth">생년월일-성별<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
@@ -32,13 +32,13 @@
 					</td>	 	    
 				</tr> 
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="license">면허번호<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
 						<input type="text" id="license" maxlength="10" title="면허번호 입력"/>
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="hp01">휴대폰<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
@@ -50,7 +50,7 @@
 					</td>	 	    
 				</tr> 
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="email01">E-mail<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="div-a">구분<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
@@ -103,7 +103,7 @@
 					</td>	 	    
 				</tr> 
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="dept">전공과(교실)<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td colspan="3">
@@ -112,13 +112,13 @@
 
 				</tr> 
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="edu">최종학력</label>
 					</th>	      
 					<td>
 						<input type="text" id="edu" maxlength="10" title="최종학력 입력"/>
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="degree">최종학위</label>
 					</th>	      
 					<td>
@@ -126,13 +126,13 @@
 					</td>	 	    
 				</tr> 
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="school">출신학위교</label>
 					</th>	      
 					<td>
 						<input type="text" id="school" maxlength="20" title="출신학위교 입력"/>
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="year">졸업년도</label>
 					</th>	      
 					<td>
@@ -140,13 +140,13 @@
 					</td>	 	    
 				</tr> 
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="hos">병원명(근무처)<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
 					</th>	      
 					<td>
 						<input type="text" id="hos" maxlength="20" title="병원명(근무처) 입력"/>
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="spot">병원직위</label>
 					</th>	      
 					<td>
@@ -154,9 +154,9 @@
 					</td>	 	    
 				</tr>  
 				<tr>	         
-					<th>
+					<th scope="row">
 						<label for="ph01">병원연락처<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
-					</th>						      
+					</th>
 					<td>
 						<div class="input-num">
 							<input type="text" id="ph01" maxlength="3" title="병원연락처 앞번호 입력" class="phoneNum"/><span class="input-text">-</span>	
@@ -164,13 +164,127 @@
 							<label><input type="text" id="ph03" maxlength="4" title="병원연락처 뒷번호 입력" class="phoneNum"/></label>
 						</div>	
 					</td>	        
-					<th>
+					<th scope="row">
 						<label for="add">병원주소</label>
 					</th>	      
 					<td>
 						<input type="text" id="add" maxlength="50" title="병원주소 입력" />
 					</td>	 	    
-				</tr>  
+				</tr> 
+				<tr>
+					<th scope="row">학력</th>
+					<td colspan="3" class="pad0">
+						<!-- 학력 -->
+						<table class="table table-type1">
+							<caption><span class="offscreen">외래교수 선임 학력 입력 테이블 </span></caption>
+							<colgroup>
+								<col style="width:318px"/>
+								<col style="width:304px"/>	
+								<col style=""/>	 
+							</colgroup>	  
+							<thead>
+								<tr>
+									<th scope="col" class="textC">구분</th>
+									<th scope="col" class="textC">전공</th>
+									<th scope="col" class="textC">학위</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="textR"><label><input type="text"  class="wid112" /> 학교 </label><label><input type="text" id="year" class="wid80" /> 년도(卒)</label></td>
+									<td><label><input type="text" id="dept" /></label></td>
+									<td class="textL"><label><input type="text"  /></label></td>
+								</tr> 
+								<tr>
+									<td class="textR"><label><input type="text"  class="wid200" /> 대학원(석사)</label></td>
+									<td><label><input type="text" /></label></td>
+									<td class="textL"><label><input type="text" /></label></td>
+								</tr> 
+								<tr>
+									<td class="textR"><label><input type="text" id="doctor-sch" class="wid200" value="" /> 대학원(박사)</label></td>
+									<td><label><input type="text" id="doctor-year" value="" /></label></td>
+									<td class="textL"><label><input type="text" id="doctor" value="" /></label></td>
+								</tr>  
+							</tbody>	
+						</table>
+						<!-- //학력 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">경력</th>
+					<td colspan="3" class="pad0">
+						<!-- 경력 -->
+						<table class="table table-type1">
+							<caption><span class="offscreen">이력서출력을 위한 표입니다.</span></caption> 	  
+							<colgroup>	    
+								<col style="width:318px"/>
+								<col style="width:304px"/>
+								<col style="width:318px"/>
+							</colgroup>	  
+							<thead>
+								<tr>
+									<th scope="col">근무처</th>
+									<th scope="col">직위</th>
+									<th scope="col">근무기관</th>
+								</tr>
+							</thead>
+							<tbody>	    
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								<tr>
+									<td class="textR"><label><span class="offscreen">근무처 입력</span><input type="text" /></label></td>
+									<td><label><span class="offscreen">직위 입력</span><input type="text" /></label></td>
+									<td class="textL"><label><span class="offscreen">근무기관 입력</span><input type="text" /></label></td>
+								</tr>
+								
+							</tbody>	
+						</table>
+						<!-- //경력 -->
+					</td>
+				</tr>
 			</tbody>	
 		</table>
 		<!-- //외래교수선임 입력 폼 -->

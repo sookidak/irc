@@ -1,0 +1,494 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">의료인을 위한 일요일 검진 신청</h1>
+	</div>
+	<div class="contents">
+		<div class="table-top">
+			<div class="left-d">
+				<h2 class="title-style2 marT30">의료인을 위한 일요일 검진 안내</h2>
+				<p class="text-style2 marT15 lineH">저희 인하대병원은 지역 의료 현장에서 시행하기 어려운 검사를 위주로 개인별 맞춤 검진을 시행하여 바쁜 진료일정으로 소홀하기 쉬운 원장님의 건강관리에 도움이 되도록 지속적으로 노력하겠습니다. 감사합니다.</p>
+			</div>
+			<div class="right-d">
+				<div class="btn-wrap2 marT30">
+					<button type="button" class="btn btn-m color02">검진안내문</button>
+					<button type="button" class="btn btn-m color02 ">대장검사 안내문</button>	
+				</div>
+			</div>
+		</div>
+		<!-- 외래교수선임 입력 폼 -->
+		<table class="table table-type4">	  
+			<caption><span class="offscreen">외래교수선임 등록을 위한 입력표입니다.</span></caption> 	  
+			<colgroup>	    
+				<col style="width:180px"/>	    
+				<col style=""/>	
+				<col style="width:180px"/>	    
+				<col style=""/>  
+			</colgroup>	  
+			<tbody>	    
+				<tr>	         
+					<th scope="row">
+						<label for="myself">본인<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="myself"  />
+					</td>	        
+					<th scope="row">
+						<label for="birth">생년월일-성별<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>
+					<td>
+						<input type="text" id="birth" title="생년월일-성별 입력"/>
+					</td>
+				</tr> 
+				<tr>	         
+					<th scope="row">
+						<label for="partner">배우자<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>
+					<td>
+						<input type="text" id="partner"/>
+					</td>
+					<th scope="row">
+						<label for="birth2">생년월일-성별<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>
+					<td>
+						<input type="text" id="birth2" title="생년월일-성별 입력"/>
+					</td>
+				</tr> 
+				<tr>
+					<th scope="row">
+						<label for="hosname">병원명<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="hosname"/>
+					</td>	        
+					<th scope="row">
+						<label for="tel01">전화번호<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-num">
+							<input type="text" id="tel01" maxlength="3"   class="phoneNum"/><span class="input-text">-</span>	
+							<label><span class="offscreen">전화번호 중간번호 입력</span><input type="text" id="tel02" maxlength="4" class="phoneNum" /></label><span class="input-text">-</span>
+							<label><span class="offscreen">전화번호 마지막번호 입력</span><input type="text" id="tel03" maxlength="4" class="phoneNum"/></label>
+						</div>	
+					</td>
+				</tr> 
+				<tr>
+					<th scope="row">
+						<label for="hosadd">병원주소<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<input type="text" id="hosadd"/>
+					</td>	        
+					<th scope="row">
+						<label for="fax01">팩스번호<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-num">
+							<input type="text" id="fax01" maxlength="3"   class="phoneNum"/><span class="input-text">-</span>	
+							<label><span class="offscreen">팩스 중간번호 입력</span><input type="text" id="fax02" maxlength="4" class="phoneNum" /></label><span class="input-text">-</span>
+							<label><span class="offscreen">팩스 마지막번호 입력</span><input type="text" id="fax03" maxlength="4" class="phoneNum"/></label>
+						</div>	
+					</td>
+				</tr> 
+				<tr>
+					<th scope="row">
+						<label for="hp01">휴대폰<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-num">
+							<input type="text" id="hp01" maxlength="3"   class="phoneNum"/><span class="input-text">-</span>	
+							<label><span class="offscreen">휴대폰 중간번호 입력</span><input type="text" id="hp02" maxlength="4" class="phoneNum" /></label><span class="input-text">-</span>
+							<label><span class="offscreen">휴대폰 마지막번호 입력</span><input type="text" id="hp03" maxlength="4" class="phoneNum"/></label>
+						</div>	
+					</td>
+					<th scope="row">
+						<label for="email01">E-mail<span class="acc">*<span class="offscreen">필수 입력</span></span></label>
+					</th>	      
+					<td>
+						<div class="input-email">
+							<input type="text" id="email01" maxlength="20" title="이메일 앞 주소 입력" class="emil2"/>
+							<span>@</span>
+							<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소 입력" class="emil" /></label>
+							<div class="select emil">
+								<label for="email-sel">직접 입력</label>
+								<select id="email-sel" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">   
+									<option value="" role="menuitem">직접 입력</option>
+									<option value="chol.com" role="menuitem">chol.com</option>
+									<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+									<option value="empal.com" role="menuitem">empal.com</option>
+									<option value="freechal.com" role="menuitem">freechal.com</option>
+									<option value="hanmail.net" role="menuitem">hanmail.net</option>
+									<option value="hanmir.com" role="menuitem">hanmir.com</option>
+									<option value="hitel.net" role="menuitem">hitel.net</option>
+									<option value="hotmail.com" role="menuitem">hotmail.com</option>
+									<option value="inha.com" role="menuitem">inha.com</option>
+									<option value="intizen.com" role="menuitem">intizen.com</option>
+									<option value="kebi.com" role="menuitem">kebi.com</option>
+									<option value="korea.com" role="menuitem">korea.com</option>
+									<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+									<option value="nate.com" role="menuitem">nate.com</option>
+									<option value="naver.com" role="menuitem">naver.com</option>
+									<option value="netian.com" role="menuitem">netian.com</option>
+									<option value="orgio.net" role="menuitem">orgio.net</option>
+									<option value="wail.co.kr" role="menuitem">wail.co.kr</option>
+								</select>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>	
+		</table>
+		<div class="marT15">
+			<ul class="list-type3">
+				<li>이름(본인,배우자)과 검진항목을 모두 입력해야 저장 됩니다.</li>
+				<li>부부 모두 입력후 1명을 삭제시 이름(본인,배우자)을 지운후 저장하면 됩니다.</li>
+				<li>각 검사항목을 클릭 하시면 감면 적용된 검진 비용을 검색할 수 있습니다.</li>
+			</ul>
+		</div>
+		<div class="marT50 ">
+			<table class="table table-type1 ">
+				<caption><span class="offscreen">수탁검사항목 내용을 안내하는 표입니다.</span></caption>	  
+				<colgroup>	    
+					<col style="width:100px;">							
+					<col style="">	    
+					<col style="width:64px;"> 			
+					<col style="width:220px;"> 			
+					<col style="width:64px;">
+					<col style="width:220px;"> 			
+				</colgroup>	 
+				<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">개원의 특화 검진항목</th>
+						<th scope="col" colspan="2">원장님</th>
+						<th scope="col" colspan="2">배우자</th>
+					</tr>
+				</thead>	  
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td class="textL">기본 - Chest CT (contrast) 단독</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check" aria-checked=”false” >
+								<label for="check" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td>135,023</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check2" aria-checked=”false” >
+								<label for="check2" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td>135,023</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="textL">기본 - Abdomen+Pelvis CT(Contrast) 단독</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check3" aria-checked=”false” >
+								<label for="check3" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td>159,943</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check4" aria-checked=”false” >
+								<label for="check4" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td>159,943</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td class="textL">기본 - Chest CT + Abdomen+Pelvis CT</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check5" aria-checked=”false” >
+								<label for="check5" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check6" aria-checked=”false” >
+								<label for="check6" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td class="textL">기본 - Duodenoscopy(EGD)-비수면·단독</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check7" aria-checked=”false” >
+								<label for="check7" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check8" aria-checked=”false” >
+								<label for="check8" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="textL">기본 - Duodenoscopy 수면비용</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check9" aria-checked=”false” >
+								<label for="check9" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check10" aria-checked=”false” >
+								<label for="check10" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td class="textL">기본 - Colonoscopy(Total)-비수면·단독</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check11" aria-checked=”false” >
+								<label for="check11" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check12" aria-checked=”false” >
+								<label for="check12" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td class="textL">기본 - Colonoscopy 수면비용</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check13" aria-checked=”false” >
+								<label for="check13" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check14" aria-checked=”false” >
+								<label for="check14" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td class="textL">기본 - 수면 EGD + 수면 Colonoscopy</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check15" aria-checked=”false” >
+								<label for="check15" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check16" aria-checked=”false” >
+								<label for="check16" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td class="textL">기본 - 수면 EGD + 수면 Colonoscopy</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check17" aria-checked=”false” >
+								<label for="check17" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check18" aria-checked=”false” >
+								<label for="check18" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td class="textL">선택 - PET Torso(AD)</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check19" aria-checked=”false” >
+								<label for="check19" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check20" aria-checked=”false” >
+								<label for="check20" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td class="textL">선택 - Breast U/S</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check21" aria-checked=”false” >
+								<label for="check21" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check22" aria-checked=”false” >
+								<label for="check22" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td class="textL">선택 - Tyroid U/S</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check23" aria-checked=”false” >
+								<label for="check23" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check24" aria-checked=”false” >
+								<label for="check24" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td class="textL">선택 - 3D Angio Coronary CT(Contrast)</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check25" aria-checked=”false” >
+								<label for="check25" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check26" aria-checked=”false” >
+								<label for="check26" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td class="textL">선택 - CBC(6종)+Admission pannel(13종)+Lipid pannel</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check27" aria-checked=”false” >
+								<label for="check27" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check28" aria-checked=”false” >
+								<label for="check28" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td class="textL">선택(남성) - 종양표지자(AFP, CEA, CA19-9, PSA)</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check29" aria-checked=”false” >
+								<label for="check29" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check30" aria-checked=”false” >
+								<label for="check30" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td class="textL">선택(여성) - 종양표지자(AFP, CEA, CA19-9, CA125)</td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check31" aria-checked=”false” >
+								<label for="check31" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+						<td>
+							<div class="checkbox boxonly">
+								<input type="checkbox" id="check32" aria-checked=”false” >
+								<label for="check32" ><span class="offscreen">항목 선택</span></label>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="color-style1">주의사항</td>
+						<td colspan="5" class="textL color-style1">
+							<ol class="">
+								<li>위·대장내시경 및 유방·갑상선초음파 검사후 필요 시, 조직검사 및 용종제거술 추가 시행 시, 추가 비용이 발생할 수 있습니다.</li>
+								<li>Breast U/S, Thyroid U/S 검사후 필요 시, Biopsy 혹은 Aspiration Cytology 추가 시행 시, 추가 비용이 발생할 수 있습니다.</li>
+								<li>상기 금액은 의료보험수가이며 수가변동에 따라 다소 차이가 발생할 수 있습니다.</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td >전달사항</td>
+						<td colspan="5" class="textL color-style1">
+							<input type="text" placeholder="* 검사관련 인하대병원에 전하실 말씀이 있으시면 기록해 주십시오." class="wid100p">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="table-bottom">
+			<ul>
+				<li>인하대병원에서 실시하는 <em class="color-style1">"의료인을 위한 일요일 검진"</em> 프로그램을 신청합니다.</li>
+				<li><em>인하대병원 병원장 귀하</em></li>
+				<li class="marT30">전화 : 032-890-3304 / 3302</li>
+				<li>팩스 : 032-890-3999</li>
+			</ul>
+		</div>
+		<!-- //외래교수선임 입력 폼 -->
+		<div class="btn-wrap marT50">
+			<button type="button" class="btn btn-l color02">저장</button>
+			<button type="button" class="btn btn-l color03 ">재작성</button>	
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

@@ -84,12 +84,10 @@ $(document).ready(function() {
 
 	//메뉴 - 3depth
 	$gnb3Wrap.on('mouseenter',function(){
-		$(this).siblings('a').addClass('active')
-		.show();
+		$(this).siblings('a').show();
 	});
 	$gnb3Wrap.on('mouseleave',function(){		
-		$(this).siblings('a').removeClass('active')
-		.hide();
+		$(this).siblings('a').hide();
 	});
 
 
@@ -161,11 +159,11 @@ $(document).ready(function() {
 		});
 	}
 	//select 적용 
-  	var selectTarget = $('.select select'); 
-  	selectTarget.change(function(){ 
-  		var select_name = $(this).children('option:selected').text(); 
-  		$(this).siblings('label').text(select_name); 
-  	});
+	var selectTarget = $('.select select'); 
+	selectTarget.change(function(){ 
+		var select_name = $(this).children('option:selected').text(); 
+		$(this).siblings('label').text(select_name); 
+	});
 
 });
 
