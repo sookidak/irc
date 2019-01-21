@@ -196,6 +196,7 @@ background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%);
 .tablist-type1.over10 a:nth-child(6n+1){border-left: 1px solid #dddddd;}
 
 .tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none}
+.tab-wrap .tabpanel:focus, .tab-wrap .tabpanel-sub:focus {  outline: none;}
 .tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block;}
 
 
@@ -650,6 +651,8 @@ textarea{min-height: 100px; padding-top: 10px; }
 
 .floatL{float:left;}
 .floatR{float:right;}
+
+.imgC{display: block;margin:0 auto }
 
 .marT5{margin-top: 5px !important}
 .marT7{margin-top: 7px !important}
