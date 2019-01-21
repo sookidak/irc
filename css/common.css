@@ -394,41 +394,46 @@ table .info-text span{display: inline-block; margin-right: 3px; position: absolu
 .table-type4> tbody>tr >th{border:1px solid #eeeeee;text-align: left;padding-left: 30px;padding-right: 0px;border-right: 0; background: #fff; height: 60px; }
 .table-type4 th .acc{color: #199da3; margin-left:2px; position: relative;top: 4px; }
 .table-type4> tbody> tr>td{text-align: left; border-left: 0; border-right: 0; border-left: 0;padding: 10px 20px 10px 0; line-height: 24px; font-size: 16px; color: #333}
-.table-type4 input[type=text],.table-type4 textarea{width:100%;}
+.table-type4 input[type=text], .table-type4 textarea{width:100%;}
 .table-type4 .select{width:100%;vertical-align: middle; }
 .table-type4 .select label{padding-right: 40px; overflow: hidden; word-break: break-all;}
 .table-type4 .input-num .phoneNum{width: 118px !important;}
 .table-type4 .input-text{margin-left:5px; }
 .table-type4 .input-email .emil{width: 124px !important;}
 .table-type4 .input-email .emil2{width: 120px !important;}
+
 /* .table-type4 input.wide{width: 970px !important;} */
 .table-type4 label{color: #333}
-.table-type4 .radio-text span{vertical-align: middle; display: inline-block; position: relative;top: -1px;}
-.table-type4 .radio-text span.line{border-left: 1px solid #eee; padding-left: 20px;}
-.table-type4 .radio:nth-child(n+2), .table-type4 .checkbox:nth-child(n+2){margin-left: 20px}
-.table-type4 .radio-sub{display: inline-block;}
-.table-type4 .radio-sub .radio:first-child{margin-left: 0px}
-.table-type4 .radio-sub .radio:nth-child(n+2){margin-left: 5px}
+.radio-text span{vertical-align: middle; display: inline-block; position: relative;top: -1px;}
+.radio-text span.line{border-left: 1px solid #eee; padding-left: 20px;}
+.radio:nth-child(n+2), .checkbox:nth-child(n+2){margin-left: 20px}
+.radio-sub{display: inline-block;}
+.radio-sub .radio:first-child{margin-left: 0px}
+.radio-sub .radio:nth-child(n+2){margin-left: 5px}
 
 /* 2차 종합병원 */
-.table-type4 .sub-table{padding:0 ;}
-.table-type4 .sub-table div.cell{border-left: 1px solid #eee; width: 280px; display: table-cell;vertical-align: middle;height: 110px; padding: 10px 30px; color: #777; text-align: right;line-height: 40px;}
-.table-type4 .sub-table div.cell label{color: #333; text-align: left; width: 187px; display: inline-block; height: 40px;}
-.table-type4 .sub-table div.cell label input{float: right;  width: 70px !important}
-.table-type4 .sub-table div.cell label:nth-child(n+2){margin-top: 10px}
-.table-type4 .sub-table div.cell:first-child{border-left:0; padding-left: 0; width:220px }
-.table-type4 .sub-table div.cell:first-child label{width: 157px}
-.table-type4 .sub-table div.cell:first-child{border-left:0}
+.sub-table{padding:0 !important;}
+.sub-table div.cell{border-left: 1px solid #eee; width: 280px; display: table-cell;vertical-align: middle;height: 110px; padding: 10px 30px; color: #777; text-align: right;line-height: 40px;}
+.sub-table div.cell label{color: #333; text-align: left; width: 187px; display: inline-block; height: 40px;}
+.sub-table div.cell label input{float: right;  width: 70px !important}
+.sub-table div.cell label:nth-child(n+2){margin-top: 10px}
+.sub-table div.cell:first-child{border-left:0; padding-left: 0; width:220px }
+.sub-table div.cell:first-child label{width: 157px}
+.sub-table div.cell:first-child{border-left:0}
 
-.table-type4 .dept-list li{float: left;width:33.33%;padding-left: 30px}
-.table-type4 .dept-list li label{line-height: 40px; padding-right: 30px; display: block;}
-.table-type4 .dept-list li input{float: right; width: 70px !important}
-.table-type4 .dept-list li:nth-child(n+4){margin-top: 10px}
-.table-type4 .dept-list li:nth-child(3n+1){width:220px ;padding-left: 0px}
+.dept-list li{float: left;width:33.33%;padding-left: 30px}
+.dept-list li label{line-height: 40px; padding-right: 30px; display: block;}
+.dept-list li input{float: right; width: 70px !important}
+.dept-list li:nth-child(n+4){margin-top: 10px}
+.dept-list li:nth-child(3n+1){width:220px ;padding-left: 0px}
 
-.table-type4 .radio-list li{float: left;width:390px ; text-align: right; height: 60px; padding-top: 15px; border-bottom: 1px solid #eee; padding-right: 20px}
-.table-type4 .radio-list li:nth-child(2n+2){padding-left: 30px; border-left: 1px solid #eee;}
-.table-type4 .radio-list li span{float: left;}
+.radio-list li{float: left;width:390px ; text-align: right; height: 60px; padding-top: 15px; border-bottom: 1px solid #eee; padding-right: 20px}
+.radio-list li:nth-child(2n+2){padding-left: 30px; border-left: 1px solid #eee;}
+.radio-list li:nth-child(n+7){border-bottom: 0px}
+.radio-list li span{float: left;}
+.table-type2 .radio-list li{padding-left: 20px;}
+.table-type2 textarea{margin:10px 0;  width:100%; }
+
 
 .table-top{position: relative;display:table;width:100%;margin-bottom:30px;}
 .table-top:after{content:'';display:block;clear:both;}
