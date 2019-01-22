@@ -789,7 +789,7 @@ ul.bxslider {list-style: none;}
 
 /* 특수수탁검사 파일 다운로드 */
 /* 상단 */
-.file-download .common-layout .download-wrap{ text-align: right; position: absolute; top: -53px; right: 0; }
+.file-download .common-layout .download-wrap{ text-align: right; position: absolute; top: -53px; right: 0;z-index:1; }
 .file-download .btn-wrap{text-align: right;}
 .file-download .reader{ font-size: 14px;color: #777; margin-top: 23px; display: inline-block;}
 .file-download .reader div{position: relative; display: inline-block; width: 172px; height: 38px; border: 1px solid #dddddd; color: #333;  font-family:'notoKrR',sans-serif; font-weight: normal; padding-left: 44px; border-radius: 1px;line-height: 36px; font-size: 14px; text-align: left; margin-left: 10px;}
