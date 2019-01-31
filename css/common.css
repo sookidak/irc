@@ -365,6 +365,11 @@ ol.list-type1 li ul li{padding-left:10px;}
 .table-type1 thead tr:first-child th{border-top: 2px solid #bbb;}
 .table-type1 td,th{line-height: 20px; padding: 18px 20px; word-break: keep-all;}
 table td .table-type1 td, table td .table-type1 th{padding: 10px;height:60px}
+.table-type1 tr.total td{background: #eee;color:#333;font-size:16px;text-align:center;}
+.table-type1 .total-title{font-family: 'NotoKrM';display:inline-block;}
+.table-type1 .total-num{font-family: 'NotoKrM';display:inline-block;color:#0770bb;}
+.table-type1 .total-title + .total-num{margin-left:30px;}
+
 
 /* table -  table-type2 */
 .table.table-type2{border-collapse:collapse !important;  }
