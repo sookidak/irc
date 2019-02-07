@@ -77,9 +77,13 @@ $(document).ready(function() {
 	$gnb2depth.on('mouseenter',function(){
 		$(this).addClass('active')
 		.siblings('gnb3Wrap').show();
+		var no = $(this).parents("div.gnb2-wrap").index();
+		$gnb.find("li a").removeClass("active");
+		$gnb.find("li").eq(no).find("a").addClass("active");
 	});
 	$gnb2depth.on('mouseleave',function(){		
 		$(this).removeClass('active');
+		$gnb.find("li a").removeClass("active");
 	});
 
 	//메뉴 - 3depth
