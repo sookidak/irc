@@ -189,7 +189,7 @@ background: linear-gradient(135deg, #0975b8 0%,#1798a6 100%);
 .tablist-type1 a{display: inline-block;text-align:center;height:60px;color:#333;font-size:16px; line-height: 60px; width:197px;  letter-spacing: -1px;  border:1px solid #dddddd;border-left: 0}
 .tablist-type1 a.active{position:relative;color:#fff;font-size:16px;font-family:'NotoKrM',sans-serif;background: #0770bb}
 .tablist-type1.under10 a:nth-child(n+6){border-top: 0;}
-.tablist-type1.under10 a:nth-child(5n+1){border-left: 1px solid #dddddd;}
+.tablist-type1.under10 a:nth-child(5n+1), .tablist-type1 a:first-child{border-left: 1px solid #dddddd;}
 .tablist-type1.over10 a:nth-child(n+7){border-top: 0;}
 .tablist-type1.over10 a:nth-child(6n+1){border-left: 1px solid #dddddd;}
 
@@ -688,6 +688,7 @@ textarea{min-height: 100px; padding-top: 10px; }
 .wid105{width: 105px !important}
 .wid120{width: 120px !important}
 .wid112{width: 112px !important}
+.wid115{width: 115px !important}
 .wid145{width: 145px !important}
 .wid160{width: 160px !important}
 .wid180{width: 180px !important}
@@ -1081,3 +1082,5 @@ td .referpop-p:last-child{margin-bottom:10px;}
 .popup-img-box .bx-controls-direction a::after{content:""; display: block; width: 9px; height: 15px; background:url('../img/icon_components.png') no-repeat -56px -95px; position: relative; top: 18px; left: 20px;;}
 .popup-img-box .bx-controls-direction .bx-prev{}
 .popup-img-box .bx-controls-direction .bx-next::after{background-position: -91px -95px;}
+
+.star{position: relative; top: 3px;}
