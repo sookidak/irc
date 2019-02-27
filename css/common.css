@@ -103,7 +103,7 @@
 .family-site{position: absolute;top: 20px; right: 0;}
 .family-site > a{ border:1px solid #34363a; width: 170px; height: 36px; line-height: 36px; background: transparent; color:#aaa; font-size: 13px; text-align: left; padding-left:10px ; letter-spacing: -1px;position:relative; display: block;}
 .family-site > a:after{content:'';display:block;width: 12px; height: 12px;background:url('../img/icon_header.png') -80px -140px no-repeat;position:absolute; right:6px; top:12px; }
-.family-site .site-open{width: 170px;border:1px solid #34363a;position: relative;top: -210px; display: none}
+.family-site .site-open{width: 170px;border:1px solid #34363a;position: absolute;bottom: 35px; display: none}
 .family-site .site-open li{background:#3d4044;border-bottom:1px solid #34363a;z-index:99; height:35px;  }
 .family-site .site-open li:last-child{border-bottom:0}
 .family-site .site-open li a{width: 100%; display: table-cell;vertical-align: center; height: 35px;padding-left:10px; }
@@ -843,7 +843,8 @@ ul.summary li:nth-child(3){background: #199da3; }
 .jojic-line{position:relative;border-bottom:1px solid #aaa;height:100px;width:921px;margin:0 auto;}
 .jojic-line:before{content:'';position:absolute;left:50%;top:0;bottom:0;display:inline-block;width:1px;background: #aaa;}
 .jojic-part-wrap{width:1100px;margin:0 auto;font-size:0}
-.jojic-part{position:relative;display:inline-block;margin-right:50px;border:1px solid #ddd;margin-top:25px;width:180px;text-align:center;font-family: 'NotoKrR';vertical-align: top}
+.jojic-part-wrap::after{content: ""; display: block; clear: both;}
+.jojic-part{position:relative;display:block;float: left; margin-right:50px;border:1px solid #ddd;margin-top:25px;width:180px;text-align:center;font-family: 'NotoKrR';vertical-align: top}
 .jojic-part:last-child{margin-right:0;}
 .part-top{position:relative;background:#757a85;color:#fff;min-height:60px;padding-top: 16px;font-size:18px}
 .jojic-part:before{content:'';position:absolute;left:50%;top:-26px;height:26px;display:inline-block;width:1px;background: #aaa;}
