@@ -901,7 +901,7 @@ ul.summary li:nth-child(3){background: #199da3; }
 .result-table-wrap table th,.result-table-wrap table td{padding:18px 0;}
 .result-table-wrap table th.textL,.result-table-wrap table td.textL{padding: 18px 20px;}
 .result-table-wrap .table-type1 tr{cursor:pointer;}
-.result-table-wrap .table-type1 tr.active td,.result-table-wrap .table-type1 tr:hover td{background: #f8f8f8;color:#0770bb;font-family: 'NotoKrR';}
+.result-table-wrap .table-type1 tr.active td,.result-table-wrap .table-type1 tr:hover td,.result-table-wrap .table-type1 tr.action td{background: #f8f8f8;color:#0770bb;font-family: 'NotoKrR';}
 .num-up{color:#cd0e0e}
 .num-up:after{content:'';display:inline-block;width:7px;height:14px;background: url('../img/arr_up.png') left top no-repeat;margin-left:5px;vertical-align:middle;}
 

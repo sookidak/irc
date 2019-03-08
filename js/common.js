@@ -169,6 +169,61 @@ $(document).ready(function() {
 		$(this).siblings('label').text(select_name); 
 	});
 
+	
+
+});
+
+//제이쿼리 달력 
+//현재 한페이지에 달력이 여러개 돌아가서 반복문 걸어둠 개발하면서 한페이지씩 떨어질 경우 수정요망
+$(function () {
+	$.datepicker.setDefaults({
+		dateFormat: 'yy-mm-dd',
+		prevText: '이전 달',
+		nextText: '다음 달',
+		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		showMonthAfterYear: true,
+		yearSuffix: '년'
+	});
+	$(function () {
+		$(".datepicker2").datepicker();
+	});
+	$('.datepicker').each(function (i) {
+		i++;
+		var dateFormat = "mm/dd/yy",
+			from = $("#from" + i)
+				.datepicker({
+					defaultDate: "+1w",
+					changeMonth: false,
+					numberOfMonths: 1
+				})
+				.on("change", function () {
+					to.datepicker("option", "minDate", getDate(this));
+				}),
+			to = $("#to" + i).datepicker({
+				defaultDate: "+1w",
+				changeMonth: false,
+				numberOfMonths: 1
+			})
+				.on("change", function () {
+					from.datepicker("option", "maxDate", getDate(this));
+				});
+
+		function getDate(element) {
+			var date;
+			try {
+				date = $.datepicker.parseDate(dateFormat, element.value);
+			} catch (error) {
+				date = null;
+			}
+
+			return date;
+		}
+
+	});
 });
 
 

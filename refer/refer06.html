@@ -2,7 +2,7 @@
 @@include('../inc/header.html')
 @@include('../inc/location.html')
 <!-- container -->
-<section class="container" id="container">	
+<section class="container" id="container">
 	<div class="pagetitle-wrap">
 		<h1 class="title-style1">회송환자 결과조회</h1>
 	</div>
@@ -11,15 +11,16 @@
 			<div class="lookup-input">
 				<div class="table-wrap">
 					<table class="table table-type3">
-						<caption><span class="offscreen">회송환자 정보 입력 테이블</span></caption> 
+						<caption><span class="offscreen">회송환자 정보 입력 테이블</span></caption>
 						<colgroup>
-							<col style="width:200px"/>
-							<col style=""/>
+							<col style="width:200px" />
+							<col style="" />
 						</colgroup>
 						<tbody>
 							<tr>
 								<th scope="row">
-									<label for="name">이름</label>
+									<label for="name">이름<span class="acc">*<span
+												class="offscreen">필수입력</span></span></label>
 								</th>
 								<td>
 									<input type="text" id="name">
@@ -27,7 +28,8 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="birth">생년월일</label>
+									<label for="birth">생년월일<span class="acc">*<span
+												class="offscreen">필수입력</span></span></label>
 								</th>
 								<td scope="row">
 									<input type="text" id="birth">
@@ -35,7 +37,8 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="ennumber">등록번호</label>
+									<label for="ennumber">등록번호<span class="acc">*<span
+												class="offscreen">필수입력</span></span></label>
 								</th>
 								<td scope="row">
 									<input type="text" id="ennumber">
@@ -43,14 +46,19 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="term">조회기간</label>
+									<label for="term">조회기간<span class="acc">*<span
+												class="offscreen">필수입력</span></span></label>
 								</th>
 								<td>
 									<div class="input-term">
-										<input type="text" id="term">
+										<label for="from1" class="datepicker">
+											<input type="text" id="from1" name="from1">
+										</label>
 										<span class="term-dash">~</span>
 										<label for="term1" class="offscreen">조회기간 끝날짜</label>
-										<input type="text" id="term1">
+										<label for="to1" class="cal-btn">
+											<input type="text" id="to1" id="to1" name="to1">
+										</label>
 									</div>
 								</td>
 							</tr>
@@ -65,21 +73,22 @@
 					<ul class="list-type1">
 						<li>6개월 이전 회송의뢰 환자는 이름, 생년월일, 등록번호로 조회하시기 바랍니다.</li>
 						<li>환자명이 ??? 로 조회될 경우 새로고침을 해주시기 바랍니다. </li>
+						<li>회송환자는 조회한 환자에 한하여 정보를 제공합니다</li>
 					</ul>
 				</div>
 			</div>
 			<div class="lookup-select">
-				<div class="table-scroll marT15 type1">			
+				<div class="table-scroll marT15 type1">
 					<!-- 보여지는 표 상단 -->
 					<table class="table thead">
 						<caption><span class="offscreen">환자 리스트 테이블</span></caption>
-						<colgroup>	    
+						<colgroup>
 							<col style="width:170px">
 							<col style="width:170px">
 							<col style="">
-							<col style="width:187px;"> 
-						</colgroup>	  
-						<thead>	
+							<col style="width:187px;">
+						</colgroup>
+						<thead>
 							<tr>
 								<th scope="col">진료의뢰일</th>
 								<th scope="col">등록번호</th>
@@ -87,29 +96,34 @@
 								<th scope="col" class="last">생년월일(S/A)</th>
 							</tr>
 						</thead>
-					</table>			
+					</table>
 					<!-- //보여지는 표 상단 -->
 					<!-- 스크롤 되는 표  -->
 					<div class="scroll">
-						<table class="table tbody" summary="스크롤이 적용되는 테이블">	  
+						<table class="table tbody" summary="스크롤이 적용되는 테이블">
 							<caption><span class="offscreen">환자리스트 테이블</span></caption>
 							<colgroup>
 								<col style="width:170px">
 								<col style="width:170px">
 								<col style="">
-								<col style="width:170px;"> 
-							</colgroup>	  	  
+								<col style="width:170px;">
+							</colgroup>
 							<!-- 숨겨지는 표 상단 -->
 							<thead class="ir">
 								<tr>
 									<th scope="col">번호</th>
 									<th scope="col">신청일</th>
 									<th scope="col">병원명</th>
-									<th  scope="col" class="last">협력체결일</th>
+									<th scope="col" class="last">협력체결일</th>
 								</tr>
 							</thead>
 							<!-- //숨겨지는 표 상단 -->
 							<tbody>
+								<!-- 최초 조회한 내역이 아무것도 없을 때에는 위의 문구로 출력 -->
+								<tr>
+									<td colspan="4">회송환자는 조회한 환자에 한하여 정보를 제공합니다.</td>
+								</tr>
+								<!-- //최초 조회한 내역이 아무것도 없을 때에는 위의 문구로 출력 -->
 								<tr>
 									<td>2018-11-26</td>
 									<td>01023341234</td>
@@ -129,9 +143,9 @@
 									<td>강성민</td>
 									<td>580305(F/61)</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
-					</div>			
+					</div>
 					<!-- //스크롤 되는 표  -->
 				</div>
 			</div>
@@ -154,7 +168,8 @@
 					<a id="lookup-anchor09" href="#lookup09" role="tab" aria-selected="false">환송의뢰서</a>
 				</div>
 				<!-- 회송의뢰정보 -->
-				<div id="lookup01" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor01" class="tabpanel-sub lookup active">
+				<div id="lookup01" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor01"
+					class="tabpanel-sub lookup active">
 					<div class="btn-wrap2">
 						<button type="button" class="btn">누적결과 보기</button>
 					</div>
@@ -175,7 +190,7 @@
 									<th scope="col">구분</th>
 								</tr>
 							</thead>
-							<tbody>	
+							<tbody>
 								<tr>
 									<td>2018-11-25</td>
 									<td>알레르기내과</td>
@@ -188,13 +203,14 @@
 									<td>김철우</td>
 									<td>외래</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //회송의뢰정보 -->
 				<!-- 진단검사 -->
-				<div id="lookup02" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor02" class="tabpanel-sub lookup">
+				<div id="lookup02" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor02"
+					class="tabpanel-sub lookup">
 					<div class="btn-wrap2">
 						<button type="button" class="btn">누적결과 보기</button>
 					</div>
@@ -245,13 +261,14 @@
 									<td>(4.0 - 6.0)</td>
 									<td>mg/dl</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //진단검사 -->
 				<!-- 판독결과 -->
-				<div id="lookup03" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor03" class="tabpanel-sub lookup">
+				<div id="lookup03" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor03"
+					class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">판독결과 조회 테이블</span></caption>
@@ -271,7 +288,7 @@
 							</thead>
 							<tbody>
 								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
+								<tr>
 									<td>2018-11-25</td>
 									<td class="textL">OCT(diddks,Macula+Disc)</td>
 									<td><a href="#link" class="active-type1">보기</a></td>
@@ -283,13 +300,14 @@
 									<td><a href="#link" class="active-type1">보기</a></td>
 									<td><a href="#link" class="active-type1">판독완료</a></td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //판독결과 -->
 				<!-- 심장검사 -->
-				<div id="lookup04" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor04" class="tabpanel-sub lookup">
+				<div id="lookup04" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor04"
+					class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">심장검사 조회 테이블</span></caption>
@@ -305,7 +323,7 @@
 							</thead>
 							<tbody>
 								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
+								<tr>
 									<td>2018-11-25</td>
 									<td class="textL"></td>
 								</tr>
@@ -313,7 +331,7 @@
 									<td>2018-11-25</td>
 									<td class="textL">OCT(diddks,Macula+Disc)</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 					<div class="btn-wrap textR marT30">
@@ -323,7 +341,8 @@
 				</div>
 				<!-- //심장검사 -->
 				<!-- 안과검사 -->
-				<div id="lookup05" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor05" class="tabpanel-sub lookup">
+				<div id="lookup05" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor05"
+					class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">안과검사 조회 테이블</span></caption>
@@ -333,7 +352,7 @@
 								<col style="width:;">
 								<col style="width:;">
 								<col style="width:;">
-								
+
 								<col style="width:;">
 								<col style="width:;">
 								<col style="width:;">
@@ -413,13 +432,14 @@
 									<td></td>
 									<td></td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //안과검사 -->
 				<!-- 수술 -->
-				<div id="lookup06" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor06" class="tabpanel-sub lookup">
+				<div id="lookup06" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor06"
+					class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type1">
 							<caption><span class="offscreen">수술 조회 테이블</span></caption>
@@ -441,27 +461,30 @@
 							</thead>
 							<tbody>
 								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
+								<tr>
 									<td>2018-11-25</td>
 									<td>CS</td>
 									<td>김영삼</td>
-									<td class="textL">Pneumothorax due to postprocedure (RT)<br>Lung cancer, Right (Rt)</td>
+									<td class="textL">Pneumothorax due to postprocedure (RT)<br>Lung cancer, Right (Rt)
+									</td>
 									<td class="textL">Closed thoracostomy</td>
 								</tr>
-								<tr >
+								<tr>
 									<td>2018-11-25</td>
 									<td>CS</td>
 									<td>김영삼</td>
-									<td class="textL">Pneumothorax due to postprocedure (RT)<br>Lung cancer, Right (Rt)</td>
+									<td class="textL">Pneumothorax due to postprocedure (RT)<br>Lung cancer, Right (Rt)
+									</td>
 									<td class="textL">Closed thoracostomy</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //수술 -->
 				<!-- 투약 -->
-				<div id="lookup07" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor07" class="tabpanel-sub lookup">
+				<div id="lookup07" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor07"
+					class="tabpanel-sub lookup">
 					<div><span class="result-smalltext color-style1">* 약품명을 클릭 하면 약품정보를 조회할 수 있습니다.</span></div>
 					<div class="result-table-wrap">
 						<table class="table table-type1">
@@ -486,7 +509,7 @@
 							</thead>
 							<tbody>
 								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
+								<tr>
 									<td>2018-11-25</td>
 									<td>ID</td>
 									<td>외래</td>
@@ -494,7 +517,7 @@
 									<td>14d</td>
 									<td>자기전 복용</td>
 								</tr>
-								<tr >
+								<tr>
 									<td>2018-11-25</td>
 									<td>ID</td>
 									<td>외래</td>
@@ -502,13 +525,14 @@
 									<td>14d</td>
 									<td>자기전 복용</td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //투약 -->
 				<!-- 퇴원요약 -->
-				<div id="lookup08" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor08" class="tabpanel-sub lookup">
+				<div id="lookup08" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor08"
+					class="tabpanel-sub lookup">
 					<div><span class="result-smalltext color-style1">* 항목을 클릭 하면 퇴원요약 내용을 확인할 수 있습니다.</span></div>
 					<div class="result-table-wrap">
 						<table class="table table-type1">
@@ -535,7 +559,7 @@
 							</thead>
 							<tbody>
 								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
+								<tr>
 									<td>1</td>
 									<td>CM</td>
 									<td>이흥렬</td>
@@ -544,7 +568,7 @@
 									<td>8</td>
 									<td>재원중</td>
 								</tr>
-								<tr >
+								<tr>
 									<td>2</td>
 									<td>CM</td>
 									<td>이흥렬</td>
@@ -553,13 +577,14 @@
 									<td>8</td>
 									<td><a href="#link" class="active-type1">보기</a></td>
 								</tr>
-							</tbody>	
+							</tbody>
 						</table>
 					</div>
 				</div>
 				<!-- //퇴원요약 -->
 				<!-- 신서 -->
-				<div id="lookup09" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor09" class="tabpanel-sub lookup">
+				<div id="lookup09" tabindex="0" role="tabpanel" aria-labelledby="lookup-anchor09"
+					class="tabpanel-sub lookup">
 					<div class="result-table-wrap">
 						<table class="table table-type2">
 							<caption><span class="offscreen">환송의뢰서 조회 테이블</span></caption>
@@ -571,57 +596,59 @@
 							</colgroup>
 							<tbody>
 								<!-- tr 선택시 active 클래스 추가 -->
-								<tr >
+								<tr>
 									<th scope="row" class="textL">환자명</th>
 									<td class="textL">이철호(M/77)</td>
 									<th scope="row" class="textL">진료과/진료의</th>
 									<td class="textL">호흡기내과/이흥렬</td>
 								</tr>
-								<tr >
+								<tr>
 									<th scope="row" class="textL">진료기간</th>
 									<td class="textL">2018.11.19~</td>
 									<th scope="row" class="textL">작성일</th>
 									<td class="textL"></td>
 								</tr>
-								<tr >
+								<tr>
 									<th scope="row" class="textL">진료기간</th>
 									<td colspan="3" class="textL">Breast mass</td>
 								</tr>
 								<tr>
 									<td colspan="4" class="textL">
 										<xmp>
-2014-11-05
-[CC] Lt Breast mass for 3M
-LNMP : 10월
-1 kid; breast feeding
-no med, op
+											2014-11-05
+											[CC] Lt Breast mass for 3M
+											LNMP : 10월
+											1 kid; breast feeding
+											no med, op
 
-[PE] Lt 2H 4cm, L/N(-)
-[PLAN] Biopsy
+											[PE] Lt 2H 4cm, L/N(-)
+											[PLAN] Biopsy
 
-U/S;
-Growing, palpable mass in left breast for 3 months
+											U/S;
+											Growing, palpable mass in left breast for 3 months
 
-Left breast;
-1. microlobulated oval heterogeneus mass at left 1H, 5cm D,
-3.99x2. 19x2. 86cm with hypervascularity
-2. irregular mass at left 2H, 1cm D, 0.81x0.45x0.884cm and at left 1H, 4cm D, 0.35cm : probably multifocal lesions
-3. oval mass at left 12H, 4cm D, 0.87x0.546x1.2cm : probably benign
-4. small cysts
+											Left breast;
+											1. microlobulated oval heterogeneus mass at left 1H, 5cm D,
+											3.99x2. 19x2. 86cm with hypervascularity
+											2. irregular mass at left 2H, 1cm D, 0.81x0.45x0.884cm and at left 1H, 4cm
+											D, 0.35cm : probably multifocal lesions
+											3. oval mass at left 12H, 4cm D, 0.87x0.546x1.2cm : probably benign
+											4. small cysts
 
-Right breast;
-1. two oval masses at right 11H, 3cm D (0.52x0.36x0.49cm) and right 11H, 4cm D (0.448cm)
-2.circumscribed round mass at right 10H, 5cm D, 0.91x0.73x0.81cm
-3. small cysts
+											Right breast;
+											1. two oval masses at right 11H, 3cm D (0.52x0.36x0.49cm) and right 11H, 4cm
+											D (0.448cm)
+											2.circumscribed round mass at right 10H, 5cm D, 0.91x0.73x0.81cm
+											3. small cysts
 
-Breast, left, core biopsy;
-Benign ductal and stromal proliferative lesion, 
-consistent with fibrocystic change
+											Breast, left, core biopsy;
+											Benign ductal and stromal proliferative lesion,
+											consistent with fibrocystic change
 
-상기 소견으로 Excision 예정입니다.
-감사합니다.
+											상기 소견으로 Excision 예정입니다.
+											감사합니다.
 
-김세중 배상
+											김세중 배상
 										</xmp>
 									</td>
 								</tr>
